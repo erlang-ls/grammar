@@ -1,0 +1,219 @@
+>-module(record).
+#^ source.erlang meta.directive.module.erlang punctuation.section.directive.begin.erlang
+# ^^^^^^ source.erlang meta.directive.module.erlang keyword.control.directive.module.erlang
+#       ^ source.erlang meta.directive.module.erlang punctuation.definition.parameters.begin.erlang
+#        ^^^^^^ source.erlang meta.directive.module.erlang entity.name.type.class.module.definition.erlang
+#              ^ source.erlang meta.directive.module.erlang punctuation.definition.parameters.end.erlang
+#               ^ source.erlang meta.directive.module.erlang punctuation.section.directive.end.erlang
+>
+>-record(rec,
+#^ source.erlang meta.directive.record.erlang punctuation.section.directive.begin.erlang
+# ^^^^^^ source.erlang meta.directive.record.erlang keyword.control.directive.import.erlang
+#       ^ source.erlang meta.directive.record.erlang punctuation.definition.parameters.begin.erlang
+#        ^^^ source.erlang meta.directive.record.erlang entity.name.type.class.record.definition.erlang
+#           ^ source.erlang meta.directive.record.erlang punctuation.separator.parameters.erlang
+>        {a = 1 :: integer(),    % a
+#^^^^^^^^ source.erlang meta.directive.record.erlang
+#        ^ source.erlang meta.directive.record.erlang meta.structure.record.erlang punctuation.definition.class.record.begin.erlang
+#         ^ source.erlang meta.directive.record.erlang meta.structure.record.erlang variable.other.field.erlang
+#          ^ source.erlang meta.directive.record.erlang meta.structure.record.erlang
+#           ^ source.erlang meta.directive.record.erlang meta.structure.record.erlang keyword.operator.symbolic.erlang
+#            ^ source.erlang meta.directive.record.erlang meta.structure.record.erlang
+#             ^ source.erlang meta.directive.record.erlang meta.structure.record.erlang constant.numeric.integer.decimal.erlang
+#              ^ source.erlang meta.directive.record.erlang meta.structure.record.erlang
+#               ^^ source.erlang meta.directive.record.erlang meta.structure.record.erlang keyword.operator.symbolic.erlang
+#                 ^ source.erlang meta.directive.record.erlang meta.structure.record.erlang
+#                  ^^^^^^^ source.erlang meta.directive.record.erlang meta.structure.record.erlang meta.function-call.erlang entity.name.function.erlang
+#                         ^ source.erlang meta.directive.record.erlang meta.structure.record.erlang meta.function-call.erlang punctuation.definition.parameters.begin.erlang
+#                          ^ source.erlang meta.directive.record.erlang meta.structure.record.erlang meta.function-call.erlang punctuation.definition.parameters.end.erlang
+#                           ^ source.erlang meta.directive.record.erlang meta.structure.record.erlang punctuation.separator.class.record.erlang
+#                            ^^^^ source.erlang meta.directive.record.erlang meta.structure.record.erlang
+#                                ^ source.erlang meta.directive.record.erlang meta.structure.record.erlang comment.line.percentage.erlang punctuation.definition.comment.erlang
+#                                 ^^ source.erlang meta.directive.record.erlang meta.structure.record.erlang comment.line.percentage.erlang
+>         b = 1,                 % b
+#^^^^^^^^^ source.erlang meta.directive.record.erlang meta.structure.record.erlang
+#         ^ source.erlang meta.directive.record.erlang meta.structure.record.erlang variable.other.field.erlang
+#          ^ source.erlang meta.directive.record.erlang meta.structure.record.erlang
+#           ^ source.erlang meta.directive.record.erlang meta.structure.record.erlang keyword.operator.symbolic.erlang
+#            ^ source.erlang meta.directive.record.erlang meta.structure.record.erlang
+#             ^ source.erlang meta.directive.record.erlang meta.structure.record.erlang constant.numeric.integer.decimal.erlang
+#              ^ source.erlang meta.directive.record.erlang meta.structure.record.erlang punctuation.separator.class.record.erlang
+#               ^^^^^^^^^^^^^^^^^ source.erlang meta.directive.record.erlang meta.structure.record.erlang
+#                                ^ source.erlang meta.directive.record.erlang meta.structure.record.erlang comment.line.percentage.erlang punctuation.definition.comment.erlang
+#                                 ^^ source.erlang meta.directive.record.erlang meta.structure.record.erlang comment.line.percentage.erlang
+>         c :: integer(),        % c
+#^^^^^^^^^ source.erlang meta.directive.record.erlang meta.structure.record.erlang
+#         ^ source.erlang meta.directive.record.erlang meta.structure.record.erlang variable.other.field.erlang
+#          ^ source.erlang meta.directive.record.erlang meta.structure.record.erlang
+#           ^^ source.erlang meta.directive.record.erlang meta.structure.record.erlang keyword.operator.symbolic.erlang
+#             ^ source.erlang meta.directive.record.erlang meta.structure.record.erlang
+#              ^^^^^^^ source.erlang meta.directive.record.erlang meta.structure.record.erlang meta.function-call.erlang entity.name.function.erlang
+#                     ^ source.erlang meta.directive.record.erlang meta.structure.record.erlang meta.function-call.erlang punctuation.definition.parameters.begin.erlang
+#                      ^ source.erlang meta.directive.record.erlang meta.structure.record.erlang meta.function-call.erlang punctuation.definition.parameters.end.erlang
+#                       ^ source.erlang meta.directive.record.erlang meta.structure.record.erlang punctuation.separator.class.record.erlang
+#                        ^^^^^^^^ source.erlang meta.directive.record.erlang meta.structure.record.erlang
+#                                ^ source.erlang meta.directive.record.erlang meta.structure.record.erlang comment.line.percentage.erlang punctuation.definition.comment.erlang
+#                                 ^^ source.erlang meta.directive.record.erlang meta.structure.record.erlang comment.line.percentage.erlang
+>         d                      % d
+#^^^^^^^^^ source.erlang meta.directive.record.erlang meta.structure.record.erlang
+#         ^ source.erlang meta.directive.record.erlang meta.structure.record.erlang variable.other.field.erlang
+#          ^^^^^^^^^^^^^^^^^^^^^^ source.erlang meta.directive.record.erlang meta.structure.record.erlang
+#                                ^ source.erlang meta.directive.record.erlang meta.structure.record.erlang comment.line.percentage.erlang punctuation.definition.comment.erlang
+#                                 ^^ source.erlang meta.directive.record.erlang meta.structure.record.erlang comment.line.percentage.erlang
+>         %% after last field
+#^^^^^^^^^ source.erlang meta.directive.record.erlang meta.structure.record.erlang punctuation.whitespace.comment.leading.erlang
+#         ^ source.erlang meta.directive.record.erlang meta.structure.record.erlang comment.line.percentage.erlang punctuation.definition.comment.erlang
+#          ^^^^^^^^^^^^^^^^^^ source.erlang meta.directive.record.erlang meta.structure.record.erlang comment.line.percentage.erlang
+>        } % after fields
+#^^^^^^^^ source.erlang meta.directive.record.erlang meta.structure.record.erlang
+#        ^ source.erlang meta.directive.record.erlang meta.structure.record.erlang punctuation.definition.class.record.end.erlang
+#         ^ source.erlang meta.directive.record.erlang
+#          ^ source.erlang meta.directive.record.erlang comment.line.percentage.erlang punctuation.definition.comment.erlang
+#           ^^^^^^^^^^^^^ source.erlang meta.directive.record.erlang comment.line.percentage.erlang
+>       ). % end of record definition
+#^^^^^^^ source.erlang meta.directive.record.erlang
+#       ^ source.erlang meta.directive.record.erlang punctuation.definition.parameters.end.erlang
+#        ^ source.erlang meta.directive.record.erlang punctuation.section.directive.end.erlang
+#         ^ source.erlang
+#          ^ source.erlang comment.line.percentage.erlang punctuation.definition.comment.erlang
+#           ^^^^^^^^^^^^^^^^^^^^^^^^^ source.erlang comment.line.percentage.erlang
+>
+>-spec f() -> ok.
+#^ source.erlang meta.directive.erlang punctuation.section.directive.begin.erlang
+# ^^^^ source.erlang meta.directive.erlang keyword.control.directive.erlang
+#     ^ source.erlang meta.directive.erlang
+#      ^ source.erlang meta.directive.erlang meta.function-call.erlang entity.name.function.erlang
+#       ^ source.erlang meta.directive.erlang meta.function-call.erlang punctuation.definition.parameters.begin.erlang
+#        ^ source.erlang meta.directive.erlang meta.function-call.erlang punctuation.definition.parameters.end.erlang
+#         ^ source.erlang meta.directive.erlang
+#          ^ source.erlang meta.directive.erlang keyword.operator.symbolic.erlang
+#           ^ source.erlang meta.directive.erlang keyword.operator.symbolic.erlang
+#            ^ source.erlang meta.directive.erlang
+#             ^^ source.erlang meta.directive.erlang constant.other.symbol.unquoted.erlang
+#               ^ source.erlang meta.directive.erlang punctuation.section.directive.end.erlang
+>f() ->
+#^ source.erlang meta.function.erlang entity.name.function.definition.erlang
+# ^ source.erlang meta.function.erlang meta.expression.parenthesized punctuation.section.expression.begin.erlang
+#  ^ source.erlang meta.function.erlang meta.expression.parenthesized punctuation.section.expression.end.erlang
+#   ^ source.erlang meta.function.erlang
+#    ^ source.erlang meta.function.erlang keyword.operator.symbolic.erlang
+#     ^ source.erlang meta.function.erlang keyword.operator.symbolic.erlang
+>    #rec.a, % a
+#^^^^ source.erlang meta.function.erlang
+#    ^ source.erlang meta.function.erlang meta.record-usage.erlang keyword.operator.record.erlang
+#     ^^^ source.erlang meta.function.erlang meta.record-usage.erlang entity.name.type.class.record.erlang
+#        ^ source.erlang meta.function.erlang meta.record-usage.erlang punctuation.separator.record-field.erlang
+#         ^ source.erlang meta.function.erlang meta.record-usage.erlang variable.other.field.erlang
+#          ^ source.erlang meta.function.erlang punctuation.separator.expressions.erlang
+#           ^ source.erlang meta.function.erlang
+#            ^ source.erlang meta.function.erlang comment.line.percentage.erlang punctuation.definition.comment.erlang
+#             ^^ source.erlang meta.function.erlang comment.line.percentage.erlang
+>    A = 1,
+#^^^^ source.erlang meta.function.erlang
+#    ^ source.erlang meta.function.erlang variable.other.erlang
+#     ^ source.erlang meta.function.erlang
+#      ^ source.erlang meta.function.erlang keyword.operator.symbolic.erlang
+#       ^ source.erlang meta.function.erlang
+#        ^ source.erlang meta.function.erlang constant.numeric.integer.decimal.erlang
+#         ^ source.erlang meta.function.erlang punctuation.separator.expressions.erlang
+>    #rec{},
+#^^^^ source.erlang meta.function.erlang
+#    ^ source.erlang meta.function.erlang meta.record-usage.erlang keyword.operator.record.erlang
+#     ^^^ source.erlang meta.function.erlang meta.record-usage.erlang entity.name.type.class.record.erlang
+#        ^ source.erlang meta.function.erlang meta.record-usage.erlang meta.structure.record.erlang punctuation.definition.class.record.begin.erlang
+#         ^ source.erlang meta.function.erlang meta.record-usage.erlang meta.structure.record.erlang punctuation.definition.class.record.end.erlang
+#          ^ source.erlang meta.function.erlang punctuation.separator.expressions.erlang
+>    B = 2,
+#^^^^ source.erlang meta.function.erlang
+#    ^ source.erlang meta.function.erlang variable.other.erlang
+#     ^ source.erlang meta.function.erlang
+#      ^ source.erlang meta.function.erlang keyword.operator.symbolic.erlang
+#       ^ source.erlang meta.function.erlang
+#        ^ source.erlang meta.function.erlang constant.numeric.integer.decimal.erlang
+#         ^ source.erlang meta.function.erlang punctuation.separator.expressions.erlang
+>    #rec{b = "2", % b
+#^^^^ source.erlang meta.function.erlang
+#    ^ source.erlang meta.function.erlang meta.record-usage.erlang keyword.operator.record.erlang
+#     ^^^ source.erlang meta.function.erlang meta.record-usage.erlang entity.name.type.class.record.erlang
+#        ^ source.erlang meta.function.erlang meta.record-usage.erlang meta.structure.record.erlang punctuation.definition.class.record.begin.erlang
+#         ^ source.erlang meta.function.erlang meta.record-usage.erlang meta.structure.record.erlang variable.other.field.erlang
+#          ^ source.erlang meta.function.erlang meta.record-usage.erlang meta.structure.record.erlang
+#           ^ source.erlang meta.function.erlang meta.record-usage.erlang meta.structure.record.erlang keyword.operator.symbolic.erlang
+#            ^ source.erlang meta.function.erlang meta.record-usage.erlang meta.structure.record.erlang
+#             ^ source.erlang meta.function.erlang meta.record-usage.erlang meta.structure.record.erlang string.quoted.double.erlang punctuation.definition.string.begin.erlang
+#              ^ source.erlang meta.function.erlang meta.record-usage.erlang meta.structure.record.erlang string.quoted.double.erlang
+#               ^ source.erlang meta.function.erlang meta.record-usage.erlang meta.structure.record.erlang string.quoted.double.erlang punctuation.definition.string.end.erlang
+#                ^ source.erlang meta.function.erlang meta.record-usage.erlang meta.structure.record.erlang punctuation.separator.class.record.erlang
+#                 ^ source.erlang meta.function.erlang meta.record-usage.erlang meta.structure.record.erlang
+#                  ^ source.erlang meta.function.erlang meta.record-usage.erlang meta.structure.record.erlang comment.line.percentage.erlang punctuation.definition.comment.erlang
+#                   ^^ source.erlang meta.function.erlang meta.record-usage.erlang meta.structure.record.erlang comment.line.percentage.erlang
+>         c = 1 % c
+#^^^^^^^^^ source.erlang meta.function.erlang meta.record-usage.erlang meta.structure.record.erlang
+#         ^ source.erlang meta.function.erlang meta.record-usage.erlang meta.structure.record.erlang variable.other.field.erlang
+#          ^ source.erlang meta.function.erlang meta.record-usage.erlang meta.structure.record.erlang
+#           ^ source.erlang meta.function.erlang meta.record-usage.erlang meta.structure.record.erlang keyword.operator.symbolic.erlang
+#            ^ source.erlang meta.function.erlang meta.record-usage.erlang meta.structure.record.erlang
+#             ^ source.erlang meta.function.erlang meta.record-usage.erlang meta.structure.record.erlang constant.numeric.integer.decimal.erlang
+#              ^ source.erlang meta.function.erlang meta.record-usage.erlang meta.structure.record.erlang
+#               ^ source.erlang meta.function.erlang meta.record-usage.erlang meta.structure.record.erlang comment.line.percentage.erlang punctuation.definition.comment.erlang
+#                ^^ source.erlang meta.function.erlang meta.record-usage.erlang meta.structure.record.erlang comment.line.percentage.erlang
+>        }, % b
+#^^^^^^^^ source.erlang meta.function.erlang meta.record-usage.erlang meta.structure.record.erlang
+#        ^ source.erlang meta.function.erlang meta.record-usage.erlang meta.structure.record.erlang punctuation.definition.class.record.end.erlang
+#         ^ source.erlang meta.function.erlang punctuation.separator.expressions.erlang
+#          ^ source.erlang meta.function.erlang
+#           ^ source.erlang meta.function.erlang comment.line.percentage.erlang punctuation.definition.comment.erlang
+#            ^^ source.erlang meta.function.erlang comment.line.percentage.erlang
+>    C = 2,
+#^^^^ source.erlang meta.function.erlang
+#    ^ source.erlang meta.function.erlang variable.other.erlang
+#     ^ source.erlang meta.function.erlang
+#      ^ source.erlang meta.function.erlang keyword.operator.symbolic.erlang
+#       ^ source.erlang meta.function.erlang
+#        ^ source.erlang meta.function.erlang constant.numeric.integer.decimal.erlang
+#         ^ source.erlang meta.function.erlang punctuation.separator.expressions.erlang
+>    #rec{a = 1, _ = '_'},
+#^^^^ source.erlang meta.function.erlang
+#    ^ source.erlang meta.function.erlang meta.record-usage.erlang keyword.operator.record.erlang
+#     ^^^ source.erlang meta.function.erlang meta.record-usage.erlang entity.name.type.class.record.erlang
+#        ^ source.erlang meta.function.erlang meta.record-usage.erlang meta.structure.record.erlang punctuation.definition.class.record.begin.erlang
+#         ^ source.erlang meta.function.erlang meta.record-usage.erlang meta.structure.record.erlang variable.other.field.erlang
+#          ^ source.erlang meta.function.erlang meta.record-usage.erlang meta.structure.record.erlang
+#           ^ source.erlang meta.function.erlang meta.record-usage.erlang meta.structure.record.erlang keyword.operator.symbolic.erlang
+#            ^ source.erlang meta.function.erlang meta.record-usage.erlang meta.structure.record.erlang
+#             ^ source.erlang meta.function.erlang meta.record-usage.erlang meta.structure.record.erlang constant.numeric.integer.decimal.erlang
+#              ^ source.erlang meta.function.erlang meta.record-usage.erlang meta.structure.record.erlang punctuation.separator.class.record.erlang
+#               ^ source.erlang meta.function.erlang meta.record-usage.erlang meta.structure.record.erlang
+#                ^ source.erlang meta.function.erlang meta.record-usage.erlang meta.structure.record.erlang variable.language.omitted.field.erlang
+#                 ^ source.erlang meta.function.erlang meta.record-usage.erlang meta.structure.record.erlang
+#                  ^ source.erlang meta.function.erlang meta.record-usage.erlang meta.structure.record.erlang keyword.operator.symbolic.erlang
+#                   ^ source.erlang meta.function.erlang meta.record-usage.erlang meta.structure.record.erlang
+#                    ^ source.erlang meta.function.erlang meta.record-usage.erlang meta.structure.record.erlang constant.other.symbol.quoted.single.erlang punctuation.definition.symbol.begin.erlang
+#                     ^ source.erlang meta.function.erlang meta.record-usage.erlang meta.structure.record.erlang constant.other.symbol.quoted.single.erlang
+#                      ^ source.erlang meta.function.erlang meta.record-usage.erlang meta.structure.record.erlang constant.other.symbol.quoted.single.erlang punctuation.definition.symbol.end.erlang
+#                       ^ source.erlang meta.function.erlang meta.record-usage.erlang meta.structure.record.erlang punctuation.definition.class.record.end.erlang
+#                        ^ source.erlang meta.function.erlang punctuation.separator.expressions.erlang
+>    D = #dummy.a,
+#^^^^ source.erlang meta.function.erlang
+#    ^ source.erlang meta.function.erlang variable.other.erlang
+#     ^ source.erlang meta.function.erlang
+#      ^ source.erlang meta.function.erlang keyword.operator.symbolic.erlang
+#       ^ source.erlang meta.function.erlang
+#        ^ source.erlang meta.function.erlang meta.record-usage.erlang keyword.operator.record.erlang
+#         ^^^^^ source.erlang meta.function.erlang meta.record-usage.erlang entity.name.type.class.record.erlang
+#              ^ source.erlang meta.function.erlang meta.record-usage.erlang punctuation.separator.record-field.erlang
+#               ^ source.erlang meta.function.erlang meta.record-usage.erlang variable.other.field.erlang
+#                ^ source.erlang meta.function.erlang punctuation.separator.expressions.erlang
+>    E = 4,
+#^^^^ source.erlang meta.function.erlang
+#    ^ source.erlang meta.function.erlang variable.other.erlang
+#     ^ source.erlang meta.function.erlang
+#      ^ source.erlang meta.function.erlang keyword.operator.symbolic.erlang
+#       ^ source.erlang meta.function.erlang
+#        ^ source.erlang meta.function.erlang constant.numeric.integer.decimal.erlang
+#         ^ source.erlang meta.function.erlang punctuation.separator.expressions.erlang
+>    ok.
+#^^^^ source.erlang meta.function.erlang
+#    ^^ source.erlang meta.function.erlang constant.other.symbol.unquoted.erlang
+#      ^ source.erlang meta.function.erlang punctuation.terminator.function.erlang
+>

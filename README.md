@@ -63,8 +63,13 @@ from _Ben Hockley_.
 
 Commit your updates on `Erlang.plist` and ignode `Erlang.yaml`.
 
+To test the grammar we use [VSCode Textmate grammar test](https://github.com/PanAeon/vscode-tmgrammar-test),
+simply run `npm ci && npm test` and all tests will be run. To add more tests you can either add annotated files
+to `./tests/` or use the snapshot facility and then tests should be added to `./test/snap`.
+
 See more:
 
 1. Visual Studio Code [Syntax Highlight Guide](https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide)
 2. TextMate [Language Grammars](https://macromates.com/manual/en/language_grammars)
 3. [Writing a TextMate Grammar: Some Lessons Learned](https://www.apeth.com/nonblog/stories/textmatebundle.html)
+4. [Building a syntax highlighting extension for VS Code](https://dev.to/borama/building-a-syntax-highlighting-extension-for-vs-code-594)
