@@ -56,10 +56,15 @@ from _Ben Hockley_.
   from Github and use below commands: (On Windows use e.g. WSL)
 
   ```bash
-  /path/to/plist_yaml.py Erlang.plist Erlang.yaml
+  /path/to/plistyamlplist.py Erlang.plist Erlang.yaml
   # Edit YAML file here ... then if you are ready convert back to PLIST
-  /path/to/yaml_plist.py Erlang.yaml Erlang.plist
+  /path/to/plistyamlplist.py Erlang.yaml Erlang.plist
   ```
+
+  > Note:
+  > Please read
+  > [Issue with Python 3.11](https://github.com/grahampugh/plist-yaml-plist/issues/15)
+  > if you get a strange error when convert PLIST to YAML or vice versa.
 
 Commit your updates on `Erlang.plist` and ignode `Erlang.yaml`.
 
