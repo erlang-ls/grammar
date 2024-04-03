@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "test": "vscode-tmgrammar-test './tests/*.erl' && vscode-tmgrammar-snap './tests/snap/*.erl'"
+    "test": "vscode-tmgrammar-test ./tests/*.erl && vscode-tmgrammar-snap ./tests/snap/*.erl"
   },
   "contributes": {
     "languages": [

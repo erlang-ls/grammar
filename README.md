@@ -63,9 +63,12 @@ from _Ben Hockley_.
 
 Commit your updates on `Erlang.plist` and ignode `Erlang.yaml`.
 
-To test the grammar we use [VSCode Textmate grammar test](https://github.com/PanAeon/vscode-tmgrammar-test),
-simply run `npm ci && npm test` and all tests will be run. To add more tests you can either add annotated files
-to `./tests/` or use the snapshot facility and then tests should be added to `./test/snap`.
+To test the grammar we use
+[VSCode Textmate grammar test](https://github.com/PanAeon/vscode-tmgrammar-test),
+simply run `npm ci && npm test` (or `npm ci` and `npm test` separately in
+PowerShell) and all tests will be run. To add more tests you can either add
+annotated files to `./tests/` or use the snapshot facility and then tests should
+be added to `./test/snap`.
 
 See more:
 
