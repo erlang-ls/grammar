@@ -2624,7 +2624,7 @@
 						</dict>
 					</dict>
 					<key>comment</key>
-					<string>io:fwrite format contorl sequence</string>
+					<string>io:fwrite format control sequence</string>
 					<key>match</key>
 					<string>(~)((\-)?\d++|(\*))?((\.)(\d++|(\*))?((\.)((\*)|.))?)?[tlkK]*[~cfegswpWPBX#bx\+ni]</string>
 					<key>name</key>
@@ -2640,7 +2640,7 @@
 						</dict>
 					</dict>
 					<key>comment</key>
-					<string>io:fread format contorl sequence</string>
+					<string>io:fread format control sequence</string>
 					<key>match</key>
 					<string>(~)(\*)?(\d++)?(t)?[~du\-#fsacl]</string>
 					<key>name</key>
