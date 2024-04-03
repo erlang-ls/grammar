@@ -22,11 +22,12 @@
 #^ source.erlang meta.directive.erlang punctuation.section.directive.begin.erlang
 # ^^^ source.erlang meta.directive.erlang keyword.control.directive.erlang
 #    ^ source.erlang meta.directive.erlang
-#     ^^^^ source.erlang meta.directive.erlang string.string.docstring.multi.erlang punctuation.definition.docstring.begin.erlang
+#     ^^^ source.erlang meta.directive.erlang string.quoted.triple.erlang meta.string.quoted.triple.begin.erlang punctuation.definition.string.begin.erlang
 >     Docstring examples
-#^^^^^^^^^^^^^^^^^^^^^^^^ source.erlang meta.directive.erlang string.string.docstring.multi.erlang
+#^^^^^^^^^^^^^^^^^^^^^^^^ source.erlang meta.directive.erlang string.quoted.triple.erlang
 >     """.
-#^^^^^^^^ source.erlang meta.directive.erlang string.string.docstring.multi.erlang punctuation.definition.docstring.end.erlang
+#^^^^^ source.erlang meta.directive.erlang string.quoted.triple.erlang meta.string.quoted.triple.end.erlang
+#     ^^^ source.erlang meta.directive.erlang string.quoted.triple.erlang meta.string.quoted.triple.end.erlang punctuation.definition.string.end.erlang
 #        ^ source.erlang meta.directive.erlang punctuation.section.directive.end.erlang
 >f() ->
 #^ source.erlang meta.function.erlang entity.name.function.definition.erlang
@@ -37,13 +38,14 @@
 #     ^ source.erlang meta.function.erlang keyword.operator.symbolic.erlang
 >    """
 #^^^^ source.erlang meta.function.erlang
-#    ^^^^ source.erlang meta.function.erlang string.string.docstring.multi.erlang punctuation.definition.docstring.begin.erlang
+#    ^^^ source.erlang meta.function.erlang string.quoted.triple.erlang meta.string.quoted.triple.begin.erlang punctuation.definition.string.begin.erlang
 >  Line "1"
-#^^^^^^^^^^^ source.erlang meta.function.erlang string.string.docstring.multi.erlang
+#^^^^^^^^^^^ source.erlang meta.function.erlang string.quoted.triple.erlang
 >  Line "2"
-#^^^^^^^^^^^ source.erlang meta.function.erlang string.string.docstring.multi.erlang
+#^^^^^^^^^^^ source.erlang meta.function.erlang string.quoted.triple.erlang
 >  """ = "Line \"1\"
-#^^^^^ source.erlang meta.function.erlang string.string.docstring.multi.erlang punctuation.definition.docstring.end.erlang
+#^^ source.erlang meta.function.erlang string.quoted.triple.erlang meta.string.quoted.triple.end.erlang
+#  ^^^ source.erlang meta.function.erlang string.quoted.triple.erlang meta.string.quoted.triple.end.erlang punctuation.definition.string.end.erlang
 #     ^ source.erlang meta.function.erlang
 #      ^ source.erlang meta.function.erlang keyword.operator.symbolic.erlang
 #       ^ source.erlang meta.function.erlang
@@ -84,14 +86,15 @@
 >
 >    """
 #^^^^ source.erlang meta.function.erlang
-#    ^^^^ source.erlang meta.function.erlang string.string.docstring.multi.erlang punctuation.definition.docstring.begin.erlang
+#    ^^^ source.erlang meta.function.erlang string.quoted.triple.erlang meta.string.quoted.triple.begin.erlang punctuation.definition.string.begin.erlang
 >      First line starting with two spaces
-#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.erlang meta.function.erlang string.string.docstring.multi.erlang
+#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.erlang meta.function.erlang string.quoted.triple.erlang
 >    Not escaped: "\t \r \xFF" and """
-#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.erlang meta.function.erlang string.string.docstring.multi.erlang
+#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.erlang meta.function.erlang string.quoted.triple.erlang
 >
 >    """ = "  First line starting with two spaces
-#^^^^^^^ source.erlang meta.function.erlang string.string.docstring.multi.erlang punctuation.definition.docstring.end.erlang
+#^^^^ source.erlang meta.function.erlang string.quoted.triple.erlang meta.string.quoted.triple.end.erlang
+#    ^^^ source.erlang meta.function.erlang string.quoted.triple.erlang meta.string.quoted.triple.end.erlang punctuation.definition.string.end.erlang
 #       ^ source.erlang meta.function.erlang
 #        ^ source.erlang meta.function.erlang keyword.operator.symbolic.erlang
 #         ^ source.erlang meta.function.erlang
@@ -143,13 +146,13 @@
 >
 >    """""
 #^^^^ source.erlang meta.function.erlang
-#    ^^^^^^ source.erlang meta.function.erlang string.string.docstring.multi.erlang punctuation.definition.docstring.begin.erlang
+#    ^^^^^ source.erlang meta.function.erlang string.quoted.triple.erlang meta.string.quoted.triple.begin.erlang punctuation.definition.string.begin.erlang
 >""""
-#^^^^^ source.erlang meta.function.erlang string.string.docstring.multi.erlang
+#^^^^^ source.erlang meta.function.erlang string.quoted.triple.erlang
 >FIXME: previous line is not a closing delimiter because opening-closing delimiter have five double quote characters
-#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.erlang meta.function.erlang string.string.docstring.multi.erlang
+#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.erlang meta.function.erlang string.quoted.triple.erlang
 >""""" = "\"\"\"\"",
-#^^^^^ source.erlang meta.function.erlang string.string.docstring.multi.erlang punctuation.definition.docstring.end.erlang
+#^^^^^ source.erlang meta.function.erlang string.quoted.triple.erlang meta.string.quoted.triple.end.erlang punctuation.definition.string.end.erlang
 #     ^ source.erlang meta.function.erlang
 #      ^ source.erlang meta.function.erlang keyword.operator.symbolic.erlang
 #       ^ source.erlang meta.function.erlang
