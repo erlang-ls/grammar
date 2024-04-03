@@ -1,0 +1,30 @@
+{
+  "scripts": {
+    "test": "vscode-tmgrammar-test './tests/*.erl' && vscode-tmgrammar-snap './tests/snap/*.erl'"
+  },
+  "contributes": {
+    "languages": [
+      {
+        "id": "erlang",
+        "extensions": [
+          ".erl",
+          ".escript",
+          ".es",
+          ".hrl",
+          ".xrl",
+          ".yrl"
+        ]
+      }
+    ],
+    "grammars": [
+      {
+        "language": "erlang",
+        "scopeName": "source.erlang",
+        "path": "./Erlang.plist"
+      }
+    ]
+  },
+  "devDependencies": {
+    "vscode-tmgrammar-test": "^0.1.3"
+  }
+}
