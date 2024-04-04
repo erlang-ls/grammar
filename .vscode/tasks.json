@@ -6,7 +6,15 @@
         {
             "label": "Run tests",
             "type": "shell",
-            "command": "npx vscode-tmgrammar-test -c './tests/*.erl' && npx vscode-tmgrammar-snap './tests/snap/*.erl'",
+            "command": "npx vscode-tmgrammar-test -c ./tests/*.erl && npx vscode-tmgrammar-snap ./tests/snap/*.erl",
+            "windows": {
+                "options": {
+                    "shell": {
+                        "executable": "C:\\Windows\\System32\\cmd.exe",
+                        "args": ["/C"]
+                    }
+                }
+            },
             "group": "test",
             "presentation": {
                 "reveal": "always",

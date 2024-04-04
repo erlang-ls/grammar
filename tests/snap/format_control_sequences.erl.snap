@@ -1,0 +1,803 @@
+>-module(format_control_sequences).
+#^ source.erlang meta.directive.module.erlang punctuation.section.directive.begin.erlang
+# ^^^^^^ source.erlang meta.directive.module.erlang keyword.control.directive.module.erlang
+#       ^ source.erlang meta.directive.module.erlang punctuation.definition.parameters.begin.erlang
+#        ^^^^^^^^^^^^^^^^^^^^^^^^ source.erlang meta.directive.module.erlang entity.name.type.class.module.definition.erlang
+#                                ^ source.erlang meta.directive.module.erlang punctuation.definition.parameters.end.erlang
+#                                 ^ source.erlang meta.directive.module.erlang punctuation.section.directive.end.erlang
+>
+>-export([f/0]).
+#^ source.erlang meta.directive.export.erlang punctuation.section.directive.begin.erlang
+# ^^^^^^ source.erlang meta.directive.export.erlang keyword.control.directive.export.erlang
+#       ^ source.erlang meta.directive.export.erlang punctuation.definition.parameters.begin.erlang
+#        ^ source.erlang meta.directive.export.erlang meta.structure.list.function.erlang punctuation.definition.list.begin.erlang
+#         ^ source.erlang meta.directive.export.erlang meta.structure.list.function.erlang entity.name.function.erlang
+#          ^ source.erlang meta.directive.export.erlang meta.structure.list.function.erlang punctuation.separator.function-arity.erlang
+#           ^ source.erlang meta.directive.export.erlang meta.structure.list.function.erlang constant.numeric.integer.decimal.erlang
+#            ^ source.erlang meta.directive.export.erlang meta.structure.list.function.erlang punctuation.definition.list.end.erlang
+#             ^ source.erlang meta.directive.export.erlang punctuation.definition.parameters.end.erlang
+#              ^ source.erlang meta.directive.export.erlang punctuation.section.directive.end.erlang
+>
+>f() ->
+#^ source.erlang meta.function.erlang entity.name.function.definition.erlang
+# ^ source.erlang meta.function.erlang meta.expression.parenthesized punctuation.section.expression.begin.erlang
+#  ^ source.erlang meta.function.erlang meta.expression.parenthesized punctuation.section.expression.end.erlang
+#   ^ source.erlang meta.function.erlang
+#    ^ source.erlang meta.function.erlang keyword.operator.symbolic.erlang
+#     ^ source.erlang meta.function.erlang keyword.operator.symbolic.erlang
+>    io:format("[~f]~n", [3.14]),
+#^^^^ source.erlang meta.function.erlang
+#    ^^ source.erlang meta.function.erlang meta.function-call.erlang entity.name.type.class.module.erlang
+#      ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.separator.module-function.erlang
+#       ^^^^^^ source.erlang meta.function.erlang meta.function-call.erlang entity.name.function.erlang
+#             ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.definition.parameters.begin.erlang
+#              ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang punctuation.definition.string.begin.erlang
+#               ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang
+#                ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#                 ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang
+#                  ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang
+#                   ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#                    ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang
+#                     ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang punctuation.definition.string.end.erlang
+#                      ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.separator.parameters.erlang
+#                       ^ source.erlang meta.function.erlang meta.function-call.erlang
+#                        ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang punctuation.definition.list.begin.erlang
+#                         ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang constant.numeric.float.erlang
+#                          ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang constant.numeric.float.erlang punctuation.separator.integer-float.erlang
+#                           ^^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang constant.numeric.float.erlang
+#                             ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang punctuation.definition.list.end.erlang
+#                              ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.definition.parameters.end.erlang
+#                               ^ source.erlang meta.function.erlang punctuation.separator.expressions.erlang
+>    io:format("[~9f]~n", [3.14]),
+#^^^^ source.erlang meta.function.erlang
+#    ^^ source.erlang meta.function.erlang meta.function-call.erlang entity.name.type.class.module.erlang
+#      ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.separator.module-function.erlang
+#       ^^^^^^ source.erlang meta.function.erlang meta.function-call.erlang entity.name.function.erlang
+#             ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.definition.parameters.begin.erlang
+#              ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang punctuation.definition.string.begin.erlang
+#               ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang
+#                ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#                 ^^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang
+#                   ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang
+#                    ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#                     ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang
+#                      ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang punctuation.definition.string.end.erlang
+#                       ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.separator.parameters.erlang
+#                        ^ source.erlang meta.function.erlang meta.function-call.erlang
+#                         ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang punctuation.definition.list.begin.erlang
+#                          ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang constant.numeric.float.erlang
+#                           ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang constant.numeric.float.erlang punctuation.separator.integer-float.erlang
+#                            ^^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang constant.numeric.float.erlang
+#                              ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang punctuation.definition.list.end.erlang
+#                               ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.definition.parameters.end.erlang
+#                                ^ source.erlang meta.function.erlang punctuation.separator.expressions.erlang
+>    io:format("[~-9f]~n", [3.14]),
+#^^^^ source.erlang meta.function.erlang
+#    ^^ source.erlang meta.function.erlang meta.function-call.erlang entity.name.type.class.module.erlang
+#      ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.separator.module-function.erlang
+#       ^^^^^^ source.erlang meta.function.erlang meta.function-call.erlang entity.name.function.erlang
+#             ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.definition.parameters.begin.erlang
+#              ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang punctuation.definition.string.begin.erlang
+#               ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang
+#                ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#                 ^^^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang
+#                    ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang
+#                     ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#                      ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang
+#                       ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang punctuation.definition.string.end.erlang
+#                        ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.separator.parameters.erlang
+#                         ^ source.erlang meta.function.erlang meta.function-call.erlang
+#                          ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang punctuation.definition.list.begin.erlang
+#                           ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang constant.numeric.float.erlang
+#                            ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang constant.numeric.float.erlang punctuation.separator.integer-float.erlang
+#                             ^^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang constant.numeric.float.erlang
+#                               ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang punctuation.definition.list.end.erlang
+#                                ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.definition.parameters.end.erlang
+#                                 ^ source.erlang meta.function.erlang punctuation.separator.expressions.erlang
+>    io:format("[~*f]~n", [9, 3.14]),
+#^^^^ source.erlang meta.function.erlang
+#    ^^ source.erlang meta.function.erlang meta.function-call.erlang entity.name.type.class.module.erlang
+#      ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.separator.module-function.erlang
+#       ^^^^^^ source.erlang meta.function.erlang meta.function-call.erlang entity.name.function.erlang
+#             ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.definition.parameters.begin.erlang
+#              ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang punctuation.definition.string.begin.erlang
+#               ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang
+#                ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#                 ^^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang
+#                   ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang
+#                    ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#                     ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang
+#                      ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang punctuation.definition.string.end.erlang
+#                       ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.separator.parameters.erlang
+#                        ^ source.erlang meta.function.erlang meta.function-call.erlang
+#                         ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang punctuation.definition.list.begin.erlang
+#                          ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang constant.numeric.integer.decimal.erlang
+#                           ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang punctuation.separator.list.erlang
+#                            ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang
+#                             ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang constant.numeric.float.erlang
+#                              ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang constant.numeric.float.erlang punctuation.separator.integer-float.erlang
+#                               ^^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang constant.numeric.float.erlang
+#                                 ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang punctuation.definition.list.end.erlang
+#                                  ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.definition.parameters.end.erlang
+#                                   ^ source.erlang meta.function.erlang punctuation.separator.expressions.erlang
+>    io:format("[~.f]~n", [3.14]),
+#^^^^ source.erlang meta.function.erlang
+#    ^^ source.erlang meta.function.erlang meta.function-call.erlang entity.name.type.class.module.erlang
+#      ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.separator.module-function.erlang
+#       ^^^^^^ source.erlang meta.function.erlang meta.function-call.erlang entity.name.function.erlang
+#             ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.definition.parameters.begin.erlang
+#              ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang punctuation.definition.string.begin.erlang
+#               ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang
+#                ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#                 ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.separator.placeholder-parts.erlang
+#                  ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang
+#                   ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang
+#                    ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#                     ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang
+#                      ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang punctuation.definition.string.end.erlang
+#                       ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.separator.parameters.erlang
+#                        ^ source.erlang meta.function.erlang meta.function-call.erlang
+#                         ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang punctuation.definition.list.begin.erlang
+#                          ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang constant.numeric.float.erlang
+#                           ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang constant.numeric.float.erlang punctuation.separator.integer-float.erlang
+#                            ^^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang constant.numeric.float.erlang
+#                              ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang punctuation.definition.list.end.erlang
+#                               ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.definition.parameters.end.erlang
+#                                ^ source.erlang meta.function.erlang punctuation.separator.expressions.erlang
+>    io:format("[~.3f]~n", [3.14]),
+#^^^^ source.erlang meta.function.erlang
+#    ^^ source.erlang meta.function.erlang meta.function-call.erlang entity.name.type.class.module.erlang
+#      ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.separator.module-function.erlang
+#       ^^^^^^ source.erlang meta.function.erlang meta.function-call.erlang entity.name.function.erlang
+#             ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.definition.parameters.begin.erlang
+#              ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang punctuation.definition.string.begin.erlang
+#               ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang
+#                ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#                 ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.separator.placeholder-parts.erlang
+#                  ^^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang
+#                    ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang
+#                     ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#                      ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang
+#                       ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang punctuation.definition.string.end.erlang
+#                        ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.separator.parameters.erlang
+#                         ^ source.erlang meta.function.erlang meta.function-call.erlang
+#                          ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang punctuation.definition.list.begin.erlang
+#                           ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang constant.numeric.float.erlang
+#                            ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang constant.numeric.float.erlang punctuation.separator.integer-float.erlang
+#                             ^^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang constant.numeric.float.erlang
+#                               ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang punctuation.definition.list.end.erlang
+#                                ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.definition.parameters.end.erlang
+#                                 ^ source.erlang meta.function.erlang punctuation.separator.expressions.erlang
+>    io:format("[~.*f]~n", [3, 3.14]),
+#^^^^ source.erlang meta.function.erlang
+#    ^^ source.erlang meta.function.erlang meta.function-call.erlang entity.name.type.class.module.erlang
+#      ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.separator.module-function.erlang
+#       ^^^^^^ source.erlang meta.function.erlang meta.function-call.erlang entity.name.function.erlang
+#             ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.definition.parameters.begin.erlang
+#              ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang punctuation.definition.string.begin.erlang
+#               ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang
+#                ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#                 ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.separator.placeholder-parts.erlang
+#                  ^^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang
+#                    ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang
+#                     ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#                      ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang
+#                       ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang punctuation.definition.string.end.erlang
+#                        ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.separator.parameters.erlang
+#                         ^ source.erlang meta.function.erlang meta.function-call.erlang
+#                          ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang punctuation.definition.list.begin.erlang
+#                           ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang constant.numeric.integer.decimal.erlang
+#                            ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang punctuation.separator.list.erlang
+#                             ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang
+#                              ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang constant.numeric.float.erlang
+#                               ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang constant.numeric.float.erlang punctuation.separator.integer-float.erlang
+#                                ^^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang constant.numeric.float.erlang
+#                                  ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang punctuation.definition.list.end.erlang
+#                                   ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.definition.parameters.end.erlang
+#                                    ^ source.erlang meta.function.erlang punctuation.separator.expressions.erlang
+>    io:format("[~9.f]~n", [3.14]),
+#^^^^ source.erlang meta.function.erlang
+#    ^^ source.erlang meta.function.erlang meta.function-call.erlang entity.name.type.class.module.erlang
+#      ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.separator.module-function.erlang
+#       ^^^^^^ source.erlang meta.function.erlang meta.function-call.erlang entity.name.function.erlang
+#             ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.definition.parameters.begin.erlang
+#              ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang punctuation.definition.string.begin.erlang
+#               ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang
+#                ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#                 ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang
+#                  ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.separator.placeholder-parts.erlang
+#                   ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang
+#                    ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang
+#                     ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#                      ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang
+#                       ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang punctuation.definition.string.end.erlang
+#                        ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.separator.parameters.erlang
+#                         ^ source.erlang meta.function.erlang meta.function-call.erlang
+#                          ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang punctuation.definition.list.begin.erlang
+#                           ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang constant.numeric.float.erlang
+#                            ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang constant.numeric.float.erlang punctuation.separator.integer-float.erlang
+#                             ^^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang constant.numeric.float.erlang
+#                               ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang punctuation.definition.list.end.erlang
+#                                ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.definition.parameters.end.erlang
+#                                 ^ source.erlang meta.function.erlang punctuation.separator.expressions.erlang
+>    io:format("[~*.f]~n", [9, 3.14]),
+#^^^^ source.erlang meta.function.erlang
+#    ^^ source.erlang meta.function.erlang meta.function-call.erlang entity.name.type.class.module.erlang
+#      ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.separator.module-function.erlang
+#       ^^^^^^ source.erlang meta.function.erlang meta.function-call.erlang entity.name.function.erlang
+#             ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.definition.parameters.begin.erlang
+#              ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang punctuation.definition.string.begin.erlang
+#               ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang
+#                ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#                 ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang
+#                  ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.separator.placeholder-parts.erlang
+#                   ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang
+#                    ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang
+#                     ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#                      ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang
+#                       ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang punctuation.definition.string.end.erlang
+#                        ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.separator.parameters.erlang
+#                         ^ source.erlang meta.function.erlang meta.function-call.erlang
+#                          ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang punctuation.definition.list.begin.erlang
+#                           ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang constant.numeric.integer.decimal.erlang
+#                            ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang punctuation.separator.list.erlang
+#                             ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang
+#                              ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang constant.numeric.float.erlang
+#                               ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang constant.numeric.float.erlang punctuation.separator.integer-float.erlang
+#                                ^^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang constant.numeric.float.erlang
+#                                  ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang punctuation.definition.list.end.erlang
+#                                   ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.definition.parameters.end.erlang
+#                                    ^ source.erlang meta.function.erlang punctuation.separator.expressions.erlang
+>    io:format("[~9.3f]~n", [3.14]),
+#^^^^ source.erlang meta.function.erlang
+#    ^^ source.erlang meta.function.erlang meta.function-call.erlang entity.name.type.class.module.erlang
+#      ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.separator.module-function.erlang
+#       ^^^^^^ source.erlang meta.function.erlang meta.function-call.erlang entity.name.function.erlang
+#             ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.definition.parameters.begin.erlang
+#              ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang punctuation.definition.string.begin.erlang
+#               ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang
+#                ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#                 ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang
+#                  ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.separator.placeholder-parts.erlang
+#                   ^^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang
+#                     ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang
+#                      ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#                       ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang
+#                        ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang punctuation.definition.string.end.erlang
+#                         ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.separator.parameters.erlang
+#                          ^ source.erlang meta.function.erlang meta.function-call.erlang
+#                           ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang punctuation.definition.list.begin.erlang
+#                            ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang constant.numeric.float.erlang
+#                             ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang constant.numeric.float.erlang punctuation.separator.integer-float.erlang
+#                              ^^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang constant.numeric.float.erlang
+#                                ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang punctuation.definition.list.end.erlang
+#                                 ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.definition.parameters.end.erlang
+#                                  ^ source.erlang meta.function.erlang punctuation.separator.expressions.erlang
+>    io:format("[~9.*f]~n", [3, 3.14]),
+#^^^^ source.erlang meta.function.erlang
+#    ^^ source.erlang meta.function.erlang meta.function-call.erlang entity.name.type.class.module.erlang
+#      ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.separator.module-function.erlang
+#       ^^^^^^ source.erlang meta.function.erlang meta.function-call.erlang entity.name.function.erlang
+#             ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.definition.parameters.begin.erlang
+#              ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang punctuation.definition.string.begin.erlang
+#               ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang
+#                ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#                 ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang
+#                  ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.separator.placeholder-parts.erlang
+#                   ^^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang
+#                     ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang
+#                      ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#                       ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang
+#                        ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang punctuation.definition.string.end.erlang
+#                         ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.separator.parameters.erlang
+#                          ^ source.erlang meta.function.erlang meta.function-call.erlang
+#                           ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang punctuation.definition.list.begin.erlang
+#                            ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang constant.numeric.integer.decimal.erlang
+#                             ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang punctuation.separator.list.erlang
+#                              ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang
+#                               ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang constant.numeric.float.erlang
+#                                ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang constant.numeric.float.erlang punctuation.separator.integer-float.erlang
+#                                 ^^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang constant.numeric.float.erlang
+#                                   ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang punctuation.definition.list.end.erlang
+#                                    ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.definition.parameters.end.erlang
+#                                     ^ source.erlang meta.function.erlang punctuation.separator.expressions.erlang
+>    io:format("[~*.3f]~n", [9, 3.14]),
+#^^^^ source.erlang meta.function.erlang
+#    ^^ source.erlang meta.function.erlang meta.function-call.erlang entity.name.type.class.module.erlang
+#      ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.separator.module-function.erlang
+#       ^^^^^^ source.erlang meta.function.erlang meta.function-call.erlang entity.name.function.erlang
+#             ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.definition.parameters.begin.erlang
+#              ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang punctuation.definition.string.begin.erlang
+#               ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang
+#                ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#                 ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang
+#                  ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.separator.placeholder-parts.erlang
+#                   ^^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang
+#                     ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang
+#                      ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#                       ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang
+#                        ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang punctuation.definition.string.end.erlang
+#                         ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.separator.parameters.erlang
+#                          ^ source.erlang meta.function.erlang meta.function-call.erlang
+#                           ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang punctuation.definition.list.begin.erlang
+#                            ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang constant.numeric.integer.decimal.erlang
+#                             ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang punctuation.separator.list.erlang
+#                              ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang
+#                               ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang constant.numeric.float.erlang
+#                                ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang constant.numeric.float.erlang punctuation.separator.integer-float.erlang
+#                                 ^^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang constant.numeric.float.erlang
+#                                   ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang punctuation.definition.list.end.erlang
+#                                    ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.definition.parameters.end.erlang
+#                                     ^ source.erlang meta.function.erlang punctuation.separator.expressions.erlang
+>    io:format("[~*.*f]~n", [9, 3, 3.14]),
+#^^^^ source.erlang meta.function.erlang
+#    ^^ source.erlang meta.function.erlang meta.function-call.erlang entity.name.type.class.module.erlang
+#      ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.separator.module-function.erlang
+#       ^^^^^^ source.erlang meta.function.erlang meta.function-call.erlang entity.name.function.erlang
+#             ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.definition.parameters.begin.erlang
+#              ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang punctuation.definition.string.begin.erlang
+#               ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang
+#                ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#                 ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang
+#                  ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.separator.placeholder-parts.erlang
+#                   ^^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang
+#                     ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang
+#                      ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#                       ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang
+#                        ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang punctuation.definition.string.end.erlang
+#                         ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.separator.parameters.erlang
+#                          ^ source.erlang meta.function.erlang meta.function-call.erlang
+#                           ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang punctuation.definition.list.begin.erlang
+#                            ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang constant.numeric.integer.decimal.erlang
+#                             ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang punctuation.separator.list.erlang
+#                              ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang
+#                               ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang constant.numeric.integer.decimal.erlang
+#                                ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang punctuation.separator.list.erlang
+#                                 ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang
+#                                  ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang constant.numeric.float.erlang
+#                                   ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang constant.numeric.float.erlang punctuation.separator.integer-float.erlang
+#                                    ^^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang constant.numeric.float.erlang
+#                                      ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang punctuation.definition.list.end.erlang
+#                                       ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.definition.parameters.end.erlang
+#                                        ^ source.erlang meta.function.erlang punctuation.separator.expressions.erlang
+>    io:format("[~..0f]~n", [3.14]),
+#^^^^ source.erlang meta.function.erlang
+#    ^^ source.erlang meta.function.erlang meta.function-call.erlang entity.name.type.class.module.erlang
+#      ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.separator.module-function.erlang
+#       ^^^^^^ source.erlang meta.function.erlang meta.function-call.erlang entity.name.function.erlang
+#             ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.definition.parameters.begin.erlang
+#              ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang punctuation.definition.string.begin.erlang
+#               ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang
+#                ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#                 ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.separator.placeholder-parts.erlang
+#                  ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.separator.placeholder-parts.erlang
+#                   ^^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang
+#                     ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang
+#                      ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#                       ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang
+#                        ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang punctuation.definition.string.end.erlang
+#                         ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.separator.parameters.erlang
+#                          ^ source.erlang meta.function.erlang meta.function-call.erlang
+#                           ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang punctuation.definition.list.begin.erlang
+#                            ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang constant.numeric.float.erlang
+#                             ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang constant.numeric.float.erlang punctuation.separator.integer-float.erlang
+#                              ^^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang constant.numeric.float.erlang
+#                                ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang punctuation.definition.list.end.erlang
+#                                 ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.definition.parameters.end.erlang
+#                                  ^ source.erlang meta.function.erlang punctuation.separator.expressions.erlang
+>    io:format("[~.3.0f]~n", [3.14]),
+#^^^^ source.erlang meta.function.erlang
+#    ^^ source.erlang meta.function.erlang meta.function-call.erlang entity.name.type.class.module.erlang
+#      ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.separator.module-function.erlang
+#       ^^^^^^ source.erlang meta.function.erlang meta.function-call.erlang entity.name.function.erlang
+#             ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.definition.parameters.begin.erlang
+#              ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang punctuation.definition.string.begin.erlang
+#               ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang
+#                ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#                 ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.separator.placeholder-parts.erlang
+#                  ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang
+#                   ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.separator.placeholder-parts.erlang
+#                    ^^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang
+#                      ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang
+#                       ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#                        ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang
+#                         ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang punctuation.definition.string.end.erlang
+#                          ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.separator.parameters.erlang
+#                           ^ source.erlang meta.function.erlang meta.function-call.erlang
+#                            ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang punctuation.definition.list.begin.erlang
+#                             ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang constant.numeric.float.erlang
+#                              ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang constant.numeric.float.erlang punctuation.separator.integer-float.erlang
+#                               ^^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang constant.numeric.float.erlang
+#                                 ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang punctuation.definition.list.end.erlang
+#                                  ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.definition.parameters.end.erlang
+#                                   ^ source.erlang meta.function.erlang punctuation.separator.expressions.erlang
+>    io:format("[~9..0f]~n", [3.14]),
+#^^^^ source.erlang meta.function.erlang
+#    ^^ source.erlang meta.function.erlang meta.function-call.erlang entity.name.type.class.module.erlang
+#      ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.separator.module-function.erlang
+#       ^^^^^^ source.erlang meta.function.erlang meta.function-call.erlang entity.name.function.erlang
+#             ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.definition.parameters.begin.erlang
+#              ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang punctuation.definition.string.begin.erlang
+#               ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang
+#                ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#                 ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang
+#                  ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.separator.placeholder-parts.erlang
+#                   ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.separator.placeholder-parts.erlang
+#                    ^^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang
+#                      ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang
+#                       ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#                        ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang
+#                         ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang punctuation.definition.string.end.erlang
+#                          ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.separator.parameters.erlang
+#                           ^ source.erlang meta.function.erlang meta.function-call.erlang
+#                            ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang punctuation.definition.list.begin.erlang
+#                             ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang constant.numeric.float.erlang
+#                              ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang constant.numeric.float.erlang punctuation.separator.integer-float.erlang
+#                               ^^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang constant.numeric.float.erlang
+#                                 ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang punctuation.definition.list.end.erlang
+#                                  ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.definition.parameters.end.erlang
+#                                   ^ source.erlang meta.function.erlang punctuation.separator.expressions.erlang
+>    io:format("[~9.3.0f]~n", [3.14]),
+#^^^^ source.erlang meta.function.erlang
+#    ^^ source.erlang meta.function.erlang meta.function-call.erlang entity.name.type.class.module.erlang
+#      ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.separator.module-function.erlang
+#       ^^^^^^ source.erlang meta.function.erlang meta.function-call.erlang entity.name.function.erlang
+#             ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.definition.parameters.begin.erlang
+#              ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang punctuation.definition.string.begin.erlang
+#               ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang
+#                ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#                 ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang
+#                  ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.separator.placeholder-parts.erlang
+#                   ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang
+#                    ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.separator.placeholder-parts.erlang
+#                     ^^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang
+#                       ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang
+#                        ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#                         ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang
+#                          ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang punctuation.definition.string.end.erlang
+#                           ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.separator.parameters.erlang
+#                            ^ source.erlang meta.function.erlang meta.function-call.erlang
+#                             ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang punctuation.definition.list.begin.erlang
+#                              ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang constant.numeric.float.erlang
+#                               ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang constant.numeric.float.erlang punctuation.separator.integer-float.erlang
+#                                ^^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang constant.numeric.float.erlang
+#                                  ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang punctuation.definition.list.end.erlang
+#                                   ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.definition.parameters.end.erlang
+#                                    ^ source.erlang meta.function.erlang punctuation.separator.expressions.erlang
+>    io:format("[~9.3.0f]~n", [3.14]),
+#^^^^ source.erlang meta.function.erlang
+#    ^^ source.erlang meta.function.erlang meta.function-call.erlang entity.name.type.class.module.erlang
+#      ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.separator.module-function.erlang
+#       ^^^^^^ source.erlang meta.function.erlang meta.function-call.erlang entity.name.function.erlang
+#             ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.definition.parameters.begin.erlang
+#              ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang punctuation.definition.string.begin.erlang
+#               ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang
+#                ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#                 ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang
+#                  ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.separator.placeholder-parts.erlang
+#                   ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang
+#                    ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.separator.placeholder-parts.erlang
+#                     ^^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang
+#                       ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang
+#                        ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#                         ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang
+#                          ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang punctuation.definition.string.end.erlang
+#                           ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.separator.parameters.erlang
+#                            ^ source.erlang meta.function.erlang meta.function-call.erlang
+#                             ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang punctuation.definition.list.begin.erlang
+#                              ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang constant.numeric.float.erlang
+#                               ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang constant.numeric.float.erlang punctuation.separator.integer-float.erlang
+#                                ^^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang constant.numeric.float.erlang
+#                                  ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang punctuation.definition.list.end.erlang
+#                                   ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.definition.parameters.end.erlang
+#                                    ^ source.erlang meta.function.erlang punctuation.separator.expressions.erlang
+>    io:format("[~9.3.*f]~n", [$*, 3.14]),
+#^^^^ source.erlang meta.function.erlang
+#    ^^ source.erlang meta.function.erlang meta.function-call.erlang entity.name.type.class.module.erlang
+#      ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.separator.module-function.erlang
+#       ^^^^^^ source.erlang meta.function.erlang meta.function-call.erlang entity.name.function.erlang
+#             ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.definition.parameters.begin.erlang
+#              ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang punctuation.definition.string.begin.erlang
+#               ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang
+#                ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#                 ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang
+#                  ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.separator.placeholder-parts.erlang
+#                   ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang
+#                    ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.separator.placeholder-parts.erlang
+#                     ^^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang
+#                       ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang
+#                        ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#                         ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang
+#                          ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang punctuation.definition.string.end.erlang
+#                           ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.separator.parameters.erlang
+#                            ^ source.erlang meta.function.erlang meta.function-call.erlang
+#                             ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang punctuation.definition.list.begin.erlang
+#                              ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang constant.character.erlang punctuation.definition.character.erlang
+#                               ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang constant.character.erlang
+#                                ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang punctuation.separator.list.erlang
+#                                 ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang
+#                                  ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang constant.numeric.float.erlang
+#                                   ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang constant.numeric.float.erlang punctuation.separator.integer-float.erlang
+#                                    ^^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang constant.numeric.float.erlang
+#                                      ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang punctuation.definition.list.end.erlang
+#                                       ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.definition.parameters.end.erlang
+#                                        ^ source.erlang meta.function.erlang punctuation.separator.expressions.erlang
+>    io:format("[~kp]~n", [#{z => "apple", a => [199 | "banana"]}]),
+#^^^^ source.erlang meta.function.erlang
+#    ^^ source.erlang meta.function.erlang meta.function-call.erlang entity.name.type.class.module.erlang
+#      ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.separator.module-function.erlang
+#       ^^^^^^ source.erlang meta.function.erlang meta.function-call.erlang entity.name.function.erlang
+#             ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.definition.parameters.begin.erlang
+#              ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang punctuation.definition.string.begin.erlang
+#               ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang
+#                ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#                 ^^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang
+#                   ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang
+#                    ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#                     ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang
+#                      ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang punctuation.definition.string.end.erlang
+#                       ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.separator.parameters.erlang
+#                        ^ source.erlang meta.function.erlang meta.function-call.erlang
+#                         ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang punctuation.definition.list.begin.erlang
+#                          ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang
+#                           ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.tuple.erlang punctuation.definition.tuple.begin.erlang
+#                            ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.tuple.erlang constant.other.symbol.unquoted.erlang
+#                             ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.tuple.erlang
+#                              ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.tuple.erlang keyword.operator.symbolic.erlang
+#                               ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.tuple.erlang keyword.operator.symbolic.erlang
+#                                ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.tuple.erlang
+#                                 ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.tuple.erlang string.quoted.double.erlang punctuation.definition.string.begin.erlang
+#                                  ^^^^^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.tuple.erlang string.quoted.double.erlang
+#                                       ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.tuple.erlang string.quoted.double.erlang punctuation.definition.string.end.erlang
+#                                        ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.tuple.erlang punctuation.separator.tuple.erlang
+#                                         ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.tuple.erlang
+#                                          ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.tuple.erlang constant.other.symbol.unquoted.erlang
+#                                           ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.tuple.erlang
+#                                            ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.tuple.erlang keyword.operator.symbolic.erlang
+#                                             ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.tuple.erlang keyword.operator.symbolic.erlang
+#                                              ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.tuple.erlang
+#                                               ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.tuple.erlang meta.structure.list.erlang punctuation.definition.list.begin.erlang
+#                                                ^^^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.tuple.erlang meta.structure.list.erlang constant.numeric.integer.decimal.erlang
+#                                                   ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.tuple.erlang meta.structure.list.erlang
+#                                                    ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.tuple.erlang meta.structure.list.erlang punctuation.separator.list.erlang
+#                                                     ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.tuple.erlang meta.structure.list.erlang
+#                                                      ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.tuple.erlang meta.structure.list.erlang string.quoted.double.erlang punctuation.definition.string.begin.erlang
+#                                                       ^^^^^^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.tuple.erlang meta.structure.list.erlang string.quoted.double.erlang
+#                                                             ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.tuple.erlang meta.structure.list.erlang string.quoted.double.erlang punctuation.definition.string.end.erlang
+#                                                              ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.tuple.erlang meta.structure.list.erlang punctuation.definition.list.end.erlang
+#                                                               ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.tuple.erlang punctuation.definition.tuple.end.erlang
+#                                                                ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang punctuation.definition.list.end.erlang
+#                                                                 ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.definition.parameters.end.erlang
+#                                                                  ^ source.erlang meta.function.erlang punctuation.separator.expressions.erlang
+>    io:format("[~Kp]~n", [reversed, #{z => "apple", a => [199 | "banana"]}]),
+#^^^^ source.erlang meta.function.erlang
+#    ^^ source.erlang meta.function.erlang meta.function-call.erlang entity.name.type.class.module.erlang
+#      ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.separator.module-function.erlang
+#       ^^^^^^ source.erlang meta.function.erlang meta.function-call.erlang entity.name.function.erlang
+#             ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.definition.parameters.begin.erlang
+#              ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang punctuation.definition.string.begin.erlang
+#               ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang
+#                ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#                 ^^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang
+#                   ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang
+#                    ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#                     ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang
+#                      ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang punctuation.definition.string.end.erlang
+#                       ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.separator.parameters.erlang
+#                        ^ source.erlang meta.function.erlang meta.function-call.erlang
+#                         ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang punctuation.definition.list.begin.erlang
+#                          ^^^^^^^^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang constant.other.symbol.unquoted.erlang
+#                                  ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang punctuation.separator.list.erlang
+#                                   ^^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang
+#                                     ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.tuple.erlang punctuation.definition.tuple.begin.erlang
+#                                      ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.tuple.erlang constant.other.symbol.unquoted.erlang
+#                                       ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.tuple.erlang
+#                                        ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.tuple.erlang keyword.operator.symbolic.erlang
+#                                         ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.tuple.erlang keyword.operator.symbolic.erlang
+#                                          ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.tuple.erlang
+#                                           ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.tuple.erlang string.quoted.double.erlang punctuation.definition.string.begin.erlang
+#                                            ^^^^^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.tuple.erlang string.quoted.double.erlang
+#                                                 ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.tuple.erlang string.quoted.double.erlang punctuation.definition.string.end.erlang
+#                                                  ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.tuple.erlang punctuation.separator.tuple.erlang
+#                                                   ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.tuple.erlang
+#                                                    ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.tuple.erlang constant.other.symbol.unquoted.erlang
+#                                                     ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.tuple.erlang
+#                                                      ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.tuple.erlang keyword.operator.symbolic.erlang
+#                                                       ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.tuple.erlang keyword.operator.symbolic.erlang
+#                                                        ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.tuple.erlang
+#                                                         ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.tuple.erlang meta.structure.list.erlang punctuation.definition.list.begin.erlang
+#                                                          ^^^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.tuple.erlang meta.structure.list.erlang constant.numeric.integer.decimal.erlang
+#                                                             ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.tuple.erlang meta.structure.list.erlang
+#                                                              ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.tuple.erlang meta.structure.list.erlang punctuation.separator.list.erlang
+#                                                               ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.tuple.erlang meta.structure.list.erlang
+#                                                                ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.tuple.erlang meta.structure.list.erlang string.quoted.double.erlang punctuation.definition.string.begin.erlang
+#                                                                 ^^^^^^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.tuple.erlang meta.structure.list.erlang string.quoted.double.erlang
+#                                                                       ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.tuple.erlang meta.structure.list.erlang string.quoted.double.erlang punctuation.definition.string.end.erlang
+#                                                                        ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.tuple.erlang meta.structure.list.erlang punctuation.definition.list.end.erlang
+#                                                                         ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.tuple.erlang punctuation.definition.tuple.end.erlang
+#                                                                          ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang punctuation.definition.list.end.erlang
+#                                                                           ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.definition.parameters.end.erlang
+#                                                                            ^ source.erlang meta.function.erlang punctuation.separator.expressions.erlang
+>    io:format("[~Klp]~n", [reversed, #{z => "apple", a => [199 | "banana"]}]),
+#^^^^ source.erlang meta.function.erlang
+#    ^^ source.erlang meta.function.erlang meta.function-call.erlang entity.name.type.class.module.erlang
+#      ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.separator.module-function.erlang
+#       ^^^^^^ source.erlang meta.function.erlang meta.function-call.erlang entity.name.function.erlang
+#             ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.definition.parameters.begin.erlang
+#              ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang punctuation.definition.string.begin.erlang
+#               ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang
+#                ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#                 ^^^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang
+#                    ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang
+#                     ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#                      ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang
+#                       ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang punctuation.definition.string.end.erlang
+#                        ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.separator.parameters.erlang
+#                         ^ source.erlang meta.function.erlang meta.function-call.erlang
+#                          ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang punctuation.definition.list.begin.erlang
+#                           ^^^^^^^^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang constant.other.symbol.unquoted.erlang
+#                                   ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang punctuation.separator.list.erlang
+#                                    ^^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang
+#                                      ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.tuple.erlang punctuation.definition.tuple.begin.erlang
+#                                       ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.tuple.erlang constant.other.symbol.unquoted.erlang
+#                                        ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.tuple.erlang
+#                                         ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.tuple.erlang keyword.operator.symbolic.erlang
+#                                          ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.tuple.erlang keyword.operator.symbolic.erlang
+#                                           ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.tuple.erlang
+#                                            ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.tuple.erlang string.quoted.double.erlang punctuation.definition.string.begin.erlang
+#                                             ^^^^^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.tuple.erlang string.quoted.double.erlang
+#                                                  ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.tuple.erlang string.quoted.double.erlang punctuation.definition.string.end.erlang
+#                                                   ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.tuple.erlang punctuation.separator.tuple.erlang
+#                                                    ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.tuple.erlang
+#                                                     ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.tuple.erlang constant.other.symbol.unquoted.erlang
+#                                                      ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.tuple.erlang
+#                                                       ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.tuple.erlang keyword.operator.symbolic.erlang
+#                                                        ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.tuple.erlang keyword.operator.symbolic.erlang
+#                                                         ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.tuple.erlang
+#                                                          ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.tuple.erlang meta.structure.list.erlang punctuation.definition.list.begin.erlang
+#                                                           ^^^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.tuple.erlang meta.structure.list.erlang constant.numeric.integer.decimal.erlang
+#                                                              ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.tuple.erlang meta.structure.list.erlang
+#                                                               ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.tuple.erlang meta.structure.list.erlang punctuation.separator.list.erlang
+#                                                                ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.tuple.erlang meta.structure.list.erlang
+#                                                                 ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.tuple.erlang meta.structure.list.erlang string.quoted.double.erlang punctuation.definition.string.begin.erlang
+#                                                                  ^^^^^^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.tuple.erlang meta.structure.list.erlang string.quoted.double.erlang
+#                                                                        ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.tuple.erlang meta.structure.list.erlang string.quoted.double.erlang punctuation.definition.string.end.erlang
+#                                                                         ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.tuple.erlang meta.structure.list.erlang punctuation.definition.list.end.erlang
+#                                                                          ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.tuple.erlang punctuation.definition.tuple.end.erlang
+#                                                                           ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang punctuation.definition.list.end.erlang
+#                                                                            ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.definition.parameters.end.erlang
+#                                                                             ^ source.erlang meta.function.erlang punctuation.separator.expressions.erlang
+>    io:format("[~lp]~n", [[199 | "banana"]]),
+#^^^^ source.erlang meta.function.erlang
+#    ^^ source.erlang meta.function.erlang meta.function-call.erlang entity.name.type.class.module.erlang
+#      ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.separator.module-function.erlang
+#       ^^^^^^ source.erlang meta.function.erlang meta.function-call.erlang entity.name.function.erlang
+#             ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.definition.parameters.begin.erlang
+#              ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang punctuation.definition.string.begin.erlang
+#               ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang
+#                ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#                 ^^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang
+#                   ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang
+#                    ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#                     ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang
+#                      ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang punctuation.definition.string.end.erlang
+#                       ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.separator.parameters.erlang
+#                        ^ source.erlang meta.function.erlang meta.function-call.erlang
+#                         ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang punctuation.definition.list.begin.erlang
+#                          ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.list.erlang punctuation.definition.list.begin.erlang
+#                           ^^^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.list.erlang constant.numeric.integer.decimal.erlang
+#                              ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.list.erlang
+#                               ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.list.erlang punctuation.separator.list.erlang
+#                                ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.list.erlang
+#                                 ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.list.erlang string.quoted.double.erlang punctuation.definition.string.begin.erlang
+#                                  ^^^^^^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.list.erlang string.quoted.double.erlang
+#                                        ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.list.erlang string.quoted.double.erlang punctuation.definition.string.end.erlang
+#                                         ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang meta.structure.list.erlang punctuation.definition.list.end.erlang
+#                                          ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang punctuation.definition.list.end.erlang
+#                                           ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.definition.parameters.end.erlang
+#                                            ^ source.erlang meta.function.erlang punctuation.separator.expressions.erlang
+>    io:format("[~-70.3._ts]~n", ["banana"]),
+#^^^^ source.erlang meta.function.erlang
+#    ^^ source.erlang meta.function.erlang meta.function-call.erlang entity.name.type.class.module.erlang
+#      ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.separator.module-function.erlang
+#       ^^^^^^ source.erlang meta.function.erlang meta.function-call.erlang entity.name.function.erlang
+#             ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.definition.parameters.begin.erlang
+#              ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang punctuation.definition.string.begin.erlang
+#               ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang
+#                ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#                 ^^^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang
+#                    ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.separator.placeholder-parts.erlang
+#                     ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang
+#                      ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.separator.placeholder-parts.erlang
+#                       ^^^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang
+#                          ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang
+#                           ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#                            ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang
+#                             ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang punctuation.definition.string.end.erlang
+#                              ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.separator.parameters.erlang
+#                               ^ source.erlang meta.function.erlang meta.function-call.erlang
+#                                ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang punctuation.definition.list.begin.erlang
+#                                 ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang string.quoted.double.erlang punctuation.definition.string.begin.erlang
+#                                  ^^^^^^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang string.quoted.double.erlang
+#                                        ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang string.quoted.double.erlang punctuation.definition.string.end.erlang
+#                                         ^ source.erlang meta.function.erlang meta.function-call.erlang meta.structure.list.erlang punctuation.definition.list.end.erlang
+#                                          ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.definition.parameters.end.erlang
+#                                           ^ source.erlang meta.function.erlang punctuation.separator.expressions.erlang
+>
+>    io:fread("~d"),
+#^^^^ source.erlang meta.function.erlang
+#    ^^ source.erlang meta.function.erlang meta.function-call.erlang entity.name.type.class.module.erlang
+#      ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.separator.module-function.erlang
+#       ^^^^^ source.erlang meta.function.erlang meta.function-call.erlang entity.name.function.erlang
+#            ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.definition.parameters.begin.erlang
+#             ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang punctuation.definition.string.begin.erlang
+#              ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#               ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang
+#                ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang punctuation.definition.string.end.erlang
+#                 ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.definition.parameters.end.erlang
+#                  ^ source.erlang meta.function.erlang punctuation.separator.expressions.erlang
+>    io:fread("~td"),
+#^^^^ source.erlang meta.function.erlang
+#    ^^ source.erlang meta.function.erlang meta.function-call.erlang entity.name.type.class.module.erlang
+#      ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.separator.module-function.erlang
+#       ^^^^^ source.erlang meta.function.erlang meta.function-call.erlang entity.name.function.erlang
+#            ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.definition.parameters.begin.erlang
+#             ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang punctuation.definition.string.begin.erlang
+#              ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#               ^^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang
+#                 ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang punctuation.definition.string.end.erlang
+#                  ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.definition.parameters.end.erlang
+#                   ^ source.erlang meta.function.erlang punctuation.separator.expressions.erlang
+>    io:fread("~10d"),
+#^^^^ source.erlang meta.function.erlang
+#    ^^ source.erlang meta.function.erlang meta.function-call.erlang entity.name.type.class.module.erlang
+#      ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.separator.module-function.erlang
+#       ^^^^^ source.erlang meta.function.erlang meta.function-call.erlang entity.name.function.erlang
+#            ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.definition.parameters.begin.erlang
+#             ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang punctuation.definition.string.begin.erlang
+#              ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#               ^^^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang
+#                  ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang punctuation.definition.string.end.erlang
+#                   ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.definition.parameters.end.erlang
+#                    ^ source.erlang meta.function.erlang punctuation.separator.expressions.erlang
+>    io:fread("~10td"),
+#^^^^ source.erlang meta.function.erlang
+#    ^^ source.erlang meta.function.erlang meta.function-call.erlang entity.name.type.class.module.erlang
+#      ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.separator.module-function.erlang
+#       ^^^^^ source.erlang meta.function.erlang meta.function-call.erlang entity.name.function.erlang
+#            ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.definition.parameters.begin.erlang
+#             ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang punctuation.definition.string.begin.erlang
+#              ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#               ^^^^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang
+#                   ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang punctuation.definition.string.end.erlang
+#                    ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.definition.parameters.end.erlang
+#                     ^ source.erlang meta.function.erlang punctuation.separator.expressions.erlang
+>    io:fread("~*10d"),
+#^^^^ source.erlang meta.function.erlang
+#    ^^ source.erlang meta.function.erlang meta.function-call.erlang entity.name.type.class.module.erlang
+#      ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.separator.module-function.erlang
+#       ^^^^^ source.erlang meta.function.erlang meta.function-call.erlang entity.name.function.erlang
+#            ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.definition.parameters.begin.erlang
+#             ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang punctuation.definition.string.begin.erlang
+#              ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#               ^^^^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang
+#                   ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang punctuation.definition.string.end.erlang
+#                    ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.definition.parameters.end.erlang
+#                     ^ source.erlang meta.function.erlang punctuation.separator.expressions.erlang
+>    io:fread("~*10td"),
+#^^^^ source.erlang meta.function.erlang
+#    ^^ source.erlang meta.function.erlang meta.function-call.erlang entity.name.type.class.module.erlang
+#      ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.separator.module-function.erlang
+#       ^^^^^ source.erlang meta.function.erlang meta.function-call.erlang entity.name.function.erlang
+#            ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.definition.parameters.begin.erlang
+#             ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang punctuation.definition.string.begin.erlang
+#              ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#               ^^^^^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang
+#                    ^ source.erlang meta.function.erlang meta.function-call.erlang string.quoted.double.erlang punctuation.definition.string.end.erlang
+#                     ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.definition.parameters.end.erlang
+#                      ^ source.erlang meta.function.erlang punctuation.separator.expressions.erlang
+>    ok.
+#^^^^ source.erlang meta.function.erlang
+#    ^^ source.erlang meta.function.erlang constant.other.symbol.unquoted.erlang
+#      ^ source.erlang meta.function.erlang punctuation.terminator.function.erlang
+>
