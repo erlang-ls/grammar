@@ -906,7 +906,7 @@
 				</dict>
 				<dict>
 					<key>begin</key>
-					<string>\b(fun)\s*+(\()(?=(\s*+\())</string>
+					<string>\b(fun)\s*+(\()(?=(\s*+\()|(\)))</string>
 					<key>beginCaptures</key>
 					<dict>
 						<key>1</key>
