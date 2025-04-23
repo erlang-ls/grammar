@@ -49,7 +49,9 @@ f() ->
     ~s'monkey ~2..0b\n',
     ~S'monkey ~2..0b\n', % verbatim
 
-     ~"monkey ~2..0b\n",
+      "monkey ~2..0b\n", % '' == '~s'
+
+     ~"monkey ~2..0b\n", % '~' == '~b'
     ~b"monkey ~2..0b\n",
     ~B"monkey ~2..0b\n", % verbatim
     ~s"monkey ~2..0b\n",
@@ -67,35 +69,47 @@ f() ->
     ~s#monkey ~2..0b\n#,
     ~S#monkey ~2..0b\n#, % verbatim
 
-    X = lists:seq(1,3), % just to check is syntax highlight is still ok
+    _X = lists:seq(1,3), % just to check is syntax highlight is still ok
     ok.
 
 -spec g() -> ok. % just to check is syntax highlight is still ok
 g() ->
+    %% verbatim ('' == '~S' for triple-quoted strings)
+    """
+    monkey ~2..0b\n
+    business
+    """,
+
+    %% verbatim ('~' == '~B' for triple-quoted strings)
     ~"""
     monkey ~2..0b\n
     business
     """,
+
     ~b""""
     monkey ~2..0b\n
     """
     business
     """",
+
     ~B"""""
     monkey ~2..0b\n
     """
     business
     """"",
+
     ~s""""""
     monkey ~2..0b\n
     """
     business
     """""",
+
     ~S"""""""
     monkey ~2..0b\n
     """
     business
     """"""",
+
     X = lists:seq(1,3), % just to check is syntax highlight is still ok
 
     <<"\"\\µA\""/utf8>> = <<$",$\\,194,181,$A,$">> =
@@ -107,7 +121,7 @@ g() ->
           """ = ~B<"\µA"> =
         ~"""
           "\µA"
-          """ = ~"\"\\µA\"" = ~/"\\µA"/
+          """ = ~"\"\\µA\"" = ~/"\\µA"/,
     X = lists:seq(1,3), % just to check is syntax highlight is still ok
 
     [$",$\\,$µ,$A,$"] =
@@ -119,7 +133,7 @@ g() ->
           """ = ~S("\µA") =
         """
         "\µA"
-        """ = "\"\\µA\""
+        """ = "\"\\µA\"",
     X = lists:seq(1,3), % just to check is syntax highlight is still ok
 
     ok.
