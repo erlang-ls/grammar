@@ -24,16 +24,16 @@
 #                   ^ source.erlang meta.directive.export.erlang punctuation.section.directive.end.erlang
 >
 >-doc """
-#^ source.erlang meta.directive.erlang punctuation.section.directive.begin.erlang
-# ^^^ source.erlang meta.directive.erlang keyword.control.directive.erlang
-#    ^ source.erlang meta.directive.erlang
-#     ^^^ source.erlang meta.directive.erlang string.quoted.triple.erlang meta.string.quoted.triple.begin.erlang punctuation.definition.string.begin.erlang
+#^ source.erlang meta.directive.doc.erlang punctuation.section.directive.begin.erlang
+# ^^^ source.erlang meta.directive.doc.erlang keyword.control.directive.doc.erlang
+#    ^ source.erlang meta.directive.doc.erlang
+#     ^^^ source.erlang meta.directive.doc.erlang comment.block.documentation.erlang punctuation.definition.string.begin.erlang
 >     Sigil examples
-#^^^^^^^^^^^^^^^^^^^^ source.erlang meta.directive.erlang string.quoted.triple.erlang
+#^^^^^^^^^^^^^^^^^^^^ source.erlang meta.directive.doc.erlang comment.block.documentation.erlang
 >     """.
-#^^^^^ source.erlang meta.directive.erlang string.quoted.triple.erlang meta.string.quoted.triple.end.erlang
-#     ^^^ source.erlang meta.directive.erlang string.quoted.triple.erlang meta.string.quoted.triple.end.erlang punctuation.definition.string.end.erlang
-#        ^ source.erlang meta.directive.erlang punctuation.section.directive.end.erlang
+#^^^^^ source.erlang meta.directive.doc.erlang comment.block.documentation.erlang
+#     ^^^ source.erlang meta.directive.doc.erlang comment.block.documentation.erlang punctuation.definition.string.end.erlang
+#        ^ source.erlang meta.directive.doc.erlang
 >-spec f() -> ok.
 #^ source.erlang meta.directive.erlang punctuation.section.directive.begin.erlang
 # ^^^^ source.erlang meta.directive.erlang keyword.control.directive.erlang
