@@ -5,37 +5,97 @@
 #        ^^^^^^^^^ source.erlang meta.directive.module.erlang entity.name.type.class.module.definition.erlang
 #                 ^ source.erlang meta.directive.module.erlang punctuation.definition.parameters.end.erlang
 #                  ^ source.erlang meta.directive.module.erlang punctuation.section.directive.end.erlang
+>-moduledoc """
+#^ source.erlang meta.directive.doc.erlang punctuation.section.directive.begin.erlang
+# ^^^^^^^^^ source.erlang meta.directive.doc.erlang keyword.control.directive.doc.erlang
+#          ^ source.erlang meta.directive.doc.erlang
+#           ^^^ source.erlang meta.directive.doc.erlang comment.block.documentation.erlang punctuation.definition.string.begin.erlang
+>Triple quoted strings examples
+#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.erlang meta.directive.doc.erlang comment.block.documentation.erlang
+>""".
+#^^^ source.erlang meta.directive.doc.erlang comment.block.documentation.erlang punctuation.definition.string.end.erlang
+#   ^ source.erlang meta.directive.doc.erlang
 >
->-export([f/0]).
+>-export([f1/0, f2/0, f3/0, f4/0, f5/0,
 #^ source.erlang meta.directive.export.erlang punctuation.section.directive.begin.erlang
 # ^^^^^^ source.erlang meta.directive.export.erlang keyword.control.directive.export.erlang
 #       ^ source.erlang meta.directive.export.erlang punctuation.definition.parameters.begin.erlang
 #        ^ source.erlang meta.directive.export.erlang meta.structure.list.function.erlang punctuation.definition.list.begin.erlang
-#         ^ source.erlang meta.directive.export.erlang meta.structure.list.function.erlang entity.name.function.erlang
-#          ^ source.erlang meta.directive.export.erlang meta.structure.list.function.erlang punctuation.separator.function-arity.erlang
-#           ^ source.erlang meta.directive.export.erlang meta.structure.list.function.erlang constant.numeric.integer.decimal.erlang
-#            ^ source.erlang meta.directive.export.erlang meta.structure.list.function.erlang punctuation.definition.list.end.erlang
-#             ^ source.erlang meta.directive.export.erlang punctuation.definition.parameters.end.erlang
-#              ^ source.erlang meta.directive.export.erlang punctuation.section.directive.end.erlang
+#         ^^ source.erlang meta.directive.export.erlang meta.structure.list.function.erlang entity.name.function.erlang
+#           ^ source.erlang meta.directive.export.erlang meta.structure.list.function.erlang punctuation.separator.function-arity.erlang
+#            ^ source.erlang meta.directive.export.erlang meta.structure.list.function.erlang constant.numeric.integer.decimal.erlang
+#             ^ source.erlang meta.directive.export.erlang meta.structure.list.function.erlang punctuation.separator.list.erlang
+#              ^ source.erlang meta.directive.export.erlang meta.structure.list.function.erlang
+#               ^^ source.erlang meta.directive.export.erlang meta.structure.list.function.erlang entity.name.function.erlang
+#                 ^ source.erlang meta.directive.export.erlang meta.structure.list.function.erlang punctuation.separator.function-arity.erlang
+#                  ^ source.erlang meta.directive.export.erlang meta.structure.list.function.erlang constant.numeric.integer.decimal.erlang
+#                   ^ source.erlang meta.directive.export.erlang meta.structure.list.function.erlang punctuation.separator.list.erlang
+#                    ^ source.erlang meta.directive.export.erlang meta.structure.list.function.erlang
+#                     ^^ source.erlang meta.directive.export.erlang meta.structure.list.function.erlang entity.name.function.erlang
+#                       ^ source.erlang meta.directive.export.erlang meta.structure.list.function.erlang punctuation.separator.function-arity.erlang
+#                        ^ source.erlang meta.directive.export.erlang meta.structure.list.function.erlang constant.numeric.integer.decimal.erlang
+#                         ^ source.erlang meta.directive.export.erlang meta.structure.list.function.erlang punctuation.separator.list.erlang
+#                          ^ source.erlang meta.directive.export.erlang meta.structure.list.function.erlang
+#                           ^^ source.erlang meta.directive.export.erlang meta.structure.list.function.erlang entity.name.function.erlang
+#                             ^ source.erlang meta.directive.export.erlang meta.structure.list.function.erlang punctuation.separator.function-arity.erlang
+#                              ^ source.erlang meta.directive.export.erlang meta.structure.list.function.erlang constant.numeric.integer.decimal.erlang
+#                               ^ source.erlang meta.directive.export.erlang meta.structure.list.function.erlang punctuation.separator.list.erlang
+#                                ^ source.erlang meta.directive.export.erlang meta.structure.list.function.erlang
+#                                 ^^ source.erlang meta.directive.export.erlang meta.structure.list.function.erlang entity.name.function.erlang
+#                                   ^ source.erlang meta.directive.export.erlang meta.structure.list.function.erlang punctuation.separator.function-arity.erlang
+#                                    ^ source.erlang meta.directive.export.erlang meta.structure.list.function.erlang constant.numeric.integer.decimal.erlang
+#                                     ^ source.erlang meta.directive.export.erlang meta.structure.list.function.erlang punctuation.separator.list.erlang
+>         g1/0, g2/0, g3/0, g4/0, g5/0]).
+#^^^^^^^^^ source.erlang meta.directive.export.erlang meta.structure.list.function.erlang
+#         ^^ source.erlang meta.directive.export.erlang meta.structure.list.function.erlang entity.name.function.erlang
+#           ^ source.erlang meta.directive.export.erlang meta.structure.list.function.erlang punctuation.separator.function-arity.erlang
+#            ^ source.erlang meta.directive.export.erlang meta.structure.list.function.erlang constant.numeric.integer.decimal.erlang
+#             ^ source.erlang meta.directive.export.erlang meta.structure.list.function.erlang punctuation.separator.list.erlang
+#              ^ source.erlang meta.directive.export.erlang meta.structure.list.function.erlang
+#               ^^ source.erlang meta.directive.export.erlang meta.structure.list.function.erlang entity.name.function.erlang
+#                 ^ source.erlang meta.directive.export.erlang meta.structure.list.function.erlang punctuation.separator.function-arity.erlang
+#                  ^ source.erlang meta.directive.export.erlang meta.structure.list.function.erlang constant.numeric.integer.decimal.erlang
+#                   ^ source.erlang meta.directive.export.erlang meta.structure.list.function.erlang punctuation.separator.list.erlang
+#                    ^ source.erlang meta.directive.export.erlang meta.structure.list.function.erlang
+#                     ^^ source.erlang meta.directive.export.erlang meta.structure.list.function.erlang entity.name.function.erlang
+#                       ^ source.erlang meta.directive.export.erlang meta.structure.list.function.erlang punctuation.separator.function-arity.erlang
+#                        ^ source.erlang meta.directive.export.erlang meta.structure.list.function.erlang constant.numeric.integer.decimal.erlang
+#                         ^ source.erlang meta.directive.export.erlang meta.structure.list.function.erlang punctuation.separator.list.erlang
+#                          ^ source.erlang meta.directive.export.erlang meta.structure.list.function.erlang
+#                           ^^ source.erlang meta.directive.export.erlang meta.structure.list.function.erlang entity.name.function.erlang
+#                             ^ source.erlang meta.directive.export.erlang meta.structure.list.function.erlang punctuation.separator.function-arity.erlang
+#                              ^ source.erlang meta.directive.export.erlang meta.structure.list.function.erlang constant.numeric.integer.decimal.erlang
+#                               ^ source.erlang meta.directive.export.erlang meta.structure.list.function.erlang punctuation.separator.list.erlang
+#                                ^ source.erlang meta.directive.export.erlang meta.structure.list.function.erlang
+#                                 ^^ source.erlang meta.directive.export.erlang meta.structure.list.function.erlang entity.name.function.erlang
+#                                   ^ source.erlang meta.directive.export.erlang meta.structure.list.function.erlang punctuation.separator.function-arity.erlang
+#                                    ^ source.erlang meta.directive.export.erlang meta.structure.list.function.erlang constant.numeric.integer.decimal.erlang
+#                                     ^ source.erlang meta.directive.export.erlang meta.structure.list.function.erlang punctuation.definition.list.end.erlang
+#                                      ^ source.erlang meta.directive.export.erlang punctuation.definition.parameters.end.erlang
+#                                       ^ source.erlang meta.directive.export.erlang punctuation.section.directive.end.erlang
+>
+>%% -doc attributes without parentheses
+#^ source.erlang comment.line.percentage.erlang punctuation.definition.comment.erlang
+# ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.erlang comment.line.percentage.erlang
 >
 >-doc """
-#^ source.erlang meta.directive.erlang punctuation.section.directive.begin.erlang
-# ^^^ source.erlang meta.directive.erlang keyword.control.directive.erlang
-#    ^ source.erlang meta.directive.erlang
-#     ^^^ source.erlang meta.directive.erlang string.quoted.triple.erlang meta.string.quoted.triple.begin.erlang punctuation.definition.string.begin.erlang
+#^ source.erlang meta.directive.doc.erlang punctuation.section.directive.begin.erlang
+# ^^^ source.erlang meta.directive.doc.erlang keyword.control.directive.doc.erlang
+#    ^ source.erlang meta.directive.doc.erlang
+#     ^^^ source.erlang meta.directive.doc.erlang comment.block.documentation.erlang punctuation.definition.string.begin.erlang
 >     Docstring examples
-#^^^^^^^^^^^^^^^^^^^^^^^^ source.erlang meta.directive.erlang string.quoted.triple.erlang
+#^^^^^^^^^^^^^^^^^^^^^^^^ source.erlang meta.directive.doc.erlang comment.block.documentation.erlang
 >     """.
-#^^^^^ source.erlang meta.directive.erlang string.quoted.triple.erlang meta.string.quoted.triple.end.erlang
-#     ^^^ source.erlang meta.directive.erlang string.quoted.triple.erlang meta.string.quoted.triple.end.erlang punctuation.definition.string.end.erlang
-#        ^ source.erlang meta.directive.erlang punctuation.section.directive.end.erlang
->f() ->
-#^ source.erlang meta.function.erlang entity.name.function.definition.erlang
-# ^ source.erlang meta.function.erlang meta.expression.parenthesized punctuation.section.expression.begin.erlang
-#  ^ source.erlang meta.function.erlang meta.expression.parenthesized punctuation.section.expression.end.erlang
-#   ^ source.erlang meta.function.erlang
-#    ^ source.erlang meta.function.erlang keyword.operator.symbolic.erlang
+#^^^^^ source.erlang meta.directive.doc.erlang comment.block.documentation.erlang
+#     ^^^ source.erlang meta.directive.doc.erlang comment.block.documentation.erlang punctuation.definition.string.end.erlang
+#        ^ source.erlang meta.directive.doc.erlang
+>f1() ->
+#^^ source.erlang meta.function.erlang entity.name.function.definition.erlang
+#  ^ source.erlang meta.function.erlang meta.expression.parenthesized punctuation.section.expression.begin.erlang
+#   ^ source.erlang meta.function.erlang meta.expression.parenthesized punctuation.section.expression.end.erlang
+#    ^ source.erlang meta.function.erlang
 #     ^ source.erlang meta.function.erlang keyword.operator.symbolic.erlang
+#      ^ source.erlang meta.function.erlang keyword.operator.symbolic.erlang
 >    """
 #^^^^ source.erlang meta.function.erlang
 #    ^^^ source.erlang meta.function.erlang string.quoted.triple.erlang meta.string.quoted.triple.begin.erlang punctuation.definition.string.begin.erlang
@@ -149,8 +209,8 @@
 #    ^^^^^ source.erlang meta.function.erlang string.quoted.triple.erlang meta.string.quoted.triple.begin.erlang punctuation.definition.string.begin.erlang
 >""""
 #^^^^^ source.erlang meta.function.erlang string.quoted.triple.erlang
->FIXME: previous line is not a closing delimiter because opening-closing delimiter have five double quote characters
-#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.erlang meta.function.erlang string.quoted.triple.erlang
+>previous line is not a closing delimiter because opening-closing delimiter have five double quote characters
+#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.erlang meta.function.erlang string.quoted.triple.erlang
 >""""" = "\"\"\"\"",
 #^^^^^ source.erlang meta.function.erlang string.quoted.triple.erlang meta.string.quoted.triple.end.erlang punctuation.definition.string.end.erlang
 #     ^ source.erlang meta.function.erlang
@@ -190,6 +250,217 @@
 #^^^^ source.erlang meta.function.erlang
 #    ^^ source.erlang meta.function.erlang constant.other.symbol.unquoted.erlang
 #      ^ source.erlang meta.function.erlang punctuation.terminator.function.erlang
+>
+>-doc ~s"""""
+#^ source.erlang meta.directive.doc.erlang punctuation.section.directive.begin.erlang
+# ^^^ source.erlang meta.directive.doc.erlang keyword.control.directive.doc.erlang
+#    ^ source.erlang meta.directive.doc.erlang
+#     ^^ source.erlang meta.directive.doc.erlang storage.type.string.erlang
+#       ^^^^^ source.erlang meta.directive.doc.erlang comment.block.documentation.erlang punctuation.definition.string.begin.erlang
+>      Hello\n
+#^^^^^^^^^^^^^^ source.erlang meta.directive.doc.erlang comment.block.documentation.erlang
+>      """"".
+#^^^^^^ source.erlang meta.directive.doc.erlang comment.block.documentation.erlang
+#      ^^^^^ source.erlang meta.directive.doc.erlang comment.block.documentation.erlang punctuation.definition.string.end.erlang
+#           ^ source.erlang meta.directive.doc.erlang
+>f2() -> ok.
+#^^ source.erlang meta.function.erlang entity.name.function.definition.erlang
+#  ^ source.erlang meta.function.erlang meta.expression.parenthesized punctuation.section.expression.begin.erlang
+#   ^ source.erlang meta.function.erlang meta.expression.parenthesized punctuation.section.expression.end.erlang
+#    ^ source.erlang meta.function.erlang
+#     ^ source.erlang meta.function.erlang keyword.operator.symbolic.erlang
+#      ^ source.erlang meta.function.erlang keyword.operator.symbolic.erlang
+#       ^ source.erlang meta.function.erlang
+#        ^^ source.erlang meta.function.erlang constant.other.symbol.unquoted.erlang
+#          ^ source.erlang meta.function.erlang punctuation.terminator.function.erlang
+>
+>-doc "Hello\n".
+#^ source.erlang meta.directive.erlang punctuation.section.directive.begin.erlang
+# ^^^ source.erlang meta.directive.erlang keyword.control.directive.erlang
+#    ^ source.erlang meta.directive.erlang
+#     ^ source.erlang meta.directive.erlang string.quoted.double.erlang punctuation.definition.string.begin.erlang
+#      ^^^^^ source.erlang meta.directive.erlang string.quoted.double.erlang
+#           ^ source.erlang meta.directive.erlang string.quoted.double.erlang constant.character.escape.erlang punctuation.definition.escape.erlang
+#            ^ source.erlang meta.directive.erlang string.quoted.double.erlang constant.character.escape.erlang
+#             ^ source.erlang meta.directive.erlang string.quoted.double.erlang punctuation.definition.string.end.erlang
+#              ^ source.erlang meta.directive.erlang punctuation.section.directive.end.erlang
+>f3() -> ok.
+#^^ source.erlang meta.function.erlang entity.name.function.definition.erlang
+#  ^ source.erlang meta.function.erlang meta.expression.parenthesized punctuation.section.expression.begin.erlang
+#   ^ source.erlang meta.function.erlang meta.expression.parenthesized punctuation.section.expression.end.erlang
+#    ^ source.erlang meta.function.erlang
+#     ^ source.erlang meta.function.erlang keyword.operator.symbolic.erlang
+#      ^ source.erlang meta.function.erlang keyword.operator.symbolic.erlang
+#       ^ source.erlang meta.function.erlang
+#        ^^ source.erlang meta.function.erlang constant.other.symbol.unquoted.erlang
+#          ^ source.erlang meta.function.erlang punctuation.terminator.function.erlang
+>
+>-doc ~s"Hello\n".
+#^ source.erlang meta.directive.erlang punctuation.section.directive.begin.erlang
+# ^^^ source.erlang meta.directive.erlang keyword.control.directive.erlang
+#    ^ source.erlang meta.directive.erlang
+#     ^^ source.erlang meta.directive.erlang string.quoted.double.sigil.erlang storage.type.string.erlang
+#       ^ source.erlang meta.directive.erlang string.quoted.double.sigil.erlang punctuation.definition.string.begin.erlang
+#        ^^^^^ source.erlang meta.directive.erlang string.quoted.double.sigil.erlang
+#             ^ source.erlang meta.directive.erlang string.quoted.double.sigil.erlang constant.character.escape.erlang punctuation.definition.escape.erlang
+#              ^ source.erlang meta.directive.erlang string.quoted.double.sigil.erlang constant.character.escape.erlang
+#               ^ source.erlang meta.directive.erlang string.quoted.double.sigil.erlang punctuation.definition.string.end.erlang
+#                ^ source.erlang meta.directive.erlang punctuation.section.directive.end.erlang
+>f4() -> ok.
+#^^ source.erlang meta.function.erlang entity.name.function.definition.erlang
+#  ^ source.erlang meta.function.erlang meta.expression.parenthesized punctuation.section.expression.begin.erlang
+#   ^ source.erlang meta.function.erlang meta.expression.parenthesized punctuation.section.expression.end.erlang
+#    ^ source.erlang meta.function.erlang
+#     ^ source.erlang meta.function.erlang keyword.operator.symbolic.erlang
+#      ^ source.erlang meta.function.erlang keyword.operator.symbolic.erlang
+#       ^ source.erlang meta.function.erlang
+#        ^^ source.erlang meta.function.erlang constant.other.symbol.unquoted.erlang
+#          ^ source.erlang meta.function.erlang punctuation.terminator.function.erlang
+>
+>-doc <<"Hello\n"/utf8>>.
+#^ source.erlang meta.directive.erlang punctuation.section.directive.begin.erlang
+# ^^^ source.erlang meta.directive.erlang keyword.control.directive.erlang
+#    ^ source.erlang meta.directive.erlang
+#     ^^ source.erlang meta.directive.erlang meta.structure.binary.erlang punctuation.definition.binary.begin.erlang
+#       ^ source.erlang meta.directive.erlang meta.structure.binary.erlang string.quoted.double.erlang punctuation.definition.string.begin.erlang
+#        ^^^^^ source.erlang meta.directive.erlang meta.structure.binary.erlang string.quoted.double.erlang
+#             ^ source.erlang meta.directive.erlang meta.structure.binary.erlang string.quoted.double.erlang constant.character.escape.erlang punctuation.definition.escape.erlang
+#              ^ source.erlang meta.directive.erlang meta.structure.binary.erlang string.quoted.double.erlang constant.character.escape.erlang
+#               ^ source.erlang meta.directive.erlang meta.structure.binary.erlang string.quoted.double.erlang punctuation.definition.string.end.erlang
+#                ^ source.erlang meta.directive.erlang meta.structure.binary.erlang punctuation.separator.value-type.erlang
+#                 ^^^^ source.erlang meta.directive.erlang meta.structure.binary.erlang storage.type.erlang
+#                     ^^ source.erlang meta.directive.erlang meta.structure.binary.erlang punctuation.definition.binary.end.erlang
+#                       ^ source.erlang meta.directive.erlang punctuation.section.directive.end.erlang
+>f5() -> ok.
+#^^ source.erlang meta.function.erlang entity.name.function.definition.erlang
+#  ^ source.erlang meta.function.erlang meta.expression.parenthesized punctuation.section.expression.begin.erlang
+#   ^ source.erlang meta.function.erlang meta.expression.parenthesized punctuation.section.expression.end.erlang
+#    ^ source.erlang meta.function.erlang
+#     ^ source.erlang meta.function.erlang keyword.operator.symbolic.erlang
+#      ^ source.erlang meta.function.erlang keyword.operator.symbolic.erlang
+#       ^ source.erlang meta.function.erlang
+#        ^^ source.erlang meta.function.erlang constant.other.symbol.unquoted.erlang
+#          ^ source.erlang meta.function.erlang punctuation.terminator.function.erlang
+>
+>%% -doc attributes with parentheses
+#^ source.erlang comment.line.percentage.erlang punctuation.definition.comment.erlang
+# ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.erlang comment.line.percentage.erlang
+>
+>-doc("""
+#^ source.erlang meta.directive.doc.erlang punctuation.section.directive.begin.erlang
+# ^^^ source.erlang meta.directive.doc.erlang keyword.control.directive.doc.erlang
+#    ^ source.erlang meta.directive.doc.erlang punctuation.definition.parameters.begin.erlang
+#     ^^^ source.erlang meta.directive.doc.erlang comment.block.documentation.erlang punctuation.definition.string.begin.erlang
+>     Hello\n
+#^^^^^^^^^^^^^ source.erlang meta.directive.doc.erlang comment.block.documentation.erlang
+>     """).
+#^^^^^ source.erlang meta.directive.doc.erlang comment.block.documentation.erlang
+#     ^^^ source.erlang meta.directive.doc.erlang comment.block.documentation.erlang punctuation.definition.string.end.erlang
+#        ^ source.erlang meta.directive.doc.erlang punctuation.section.directive.end.Erlang
+#         ^ source.erlang meta.directive.doc.erlang
+>g1() -> ok.
+#^^ source.erlang meta.function.erlang entity.name.function.definition.erlang
+#  ^ source.erlang meta.function.erlang meta.expression.parenthesized punctuation.section.expression.begin.erlang
+#   ^ source.erlang meta.function.erlang meta.expression.parenthesized punctuation.section.expression.end.erlang
+#    ^ source.erlang meta.function.erlang
+#     ^ source.erlang meta.function.erlang keyword.operator.symbolic.erlang
+#      ^ source.erlang meta.function.erlang keyword.operator.symbolic.erlang
+#       ^ source.erlang meta.function.erlang
+#        ^^ source.erlang meta.function.erlang constant.other.symbol.unquoted.erlang
+#          ^ source.erlang meta.function.erlang punctuation.terminator.function.erlang
+>
+>-doc(~B"""""
+#^ source.erlang meta.directive.doc.erlang punctuation.section.directive.begin.erlang
+# ^^^ source.erlang meta.directive.doc.erlang keyword.control.directive.doc.erlang
+#    ^ source.erlang meta.directive.doc.erlang punctuation.definition.parameters.begin.erlang
+#     ^^ source.erlang meta.directive.doc.erlang storage.type.string.erlang
+#       ^^^^^ source.erlang meta.directive.doc.erlang comment.block.documentation.erlang punctuation.definition.string.begin.erlang
+>      Hello\n
+#^^^^^^^^^^^^^^ source.erlang meta.directive.doc.erlang comment.block.documentation.erlang
+>      """"").
+#^^^^^^ source.erlang meta.directive.doc.erlang comment.block.documentation.erlang
+#      ^^^^^ source.erlang meta.directive.doc.erlang comment.block.documentation.erlang punctuation.definition.string.end.erlang
+#           ^ source.erlang meta.directive.doc.erlang punctuation.section.directive.end.Erlang
+#            ^ source.erlang meta.directive.doc.erlang
+>g2() -> ok.
+#^^ source.erlang meta.function.erlang entity.name.function.definition.erlang
+#  ^ source.erlang meta.function.erlang meta.expression.parenthesized punctuation.section.expression.begin.erlang
+#   ^ source.erlang meta.function.erlang meta.expression.parenthesized punctuation.section.expression.end.erlang
+#    ^ source.erlang meta.function.erlang
+#     ^ source.erlang meta.function.erlang keyword.operator.symbolic.erlang
+#      ^ source.erlang meta.function.erlang keyword.operator.symbolic.erlang
+#       ^ source.erlang meta.function.erlang
+#        ^^ source.erlang meta.function.erlang constant.other.symbol.unquoted.erlang
+#          ^ source.erlang meta.function.erlang punctuation.terminator.function.erlang
+>
+>-doc("Hello\n").
+#^ source.erlang meta.directive.erlang punctuation.section.directive.begin.erlang
+# ^^^ source.erlang meta.directive.erlang keyword.control.directive.erlang
+#    ^ source.erlang meta.directive.erlang punctuation.definition.parameters.begin.erlang
+#     ^ source.erlang meta.directive.erlang string.quoted.double.erlang punctuation.definition.string.begin.erlang
+#      ^^^^^ source.erlang meta.directive.erlang string.quoted.double.erlang
+#           ^ source.erlang meta.directive.erlang string.quoted.double.erlang constant.character.escape.erlang punctuation.definition.escape.erlang
+#            ^ source.erlang meta.directive.erlang string.quoted.double.erlang constant.character.escape.erlang
+#             ^ source.erlang meta.directive.erlang string.quoted.double.erlang punctuation.definition.string.end.erlang
+#              ^ source.erlang meta.directive.erlang punctuation.definition.parameters.end.erlang
+#               ^ source.erlang meta.directive.erlang punctuation.section.directive.end.erlang
+>g3() -> ok.
+#^^ source.erlang meta.function.erlang entity.name.function.definition.erlang
+#  ^ source.erlang meta.function.erlang meta.expression.parenthesized punctuation.section.expression.begin.erlang
+#   ^ source.erlang meta.function.erlang meta.expression.parenthesized punctuation.section.expression.end.erlang
+#    ^ source.erlang meta.function.erlang
+#     ^ source.erlang meta.function.erlang keyword.operator.symbolic.erlang
+#      ^ source.erlang meta.function.erlang keyword.operator.symbolic.erlang
+#       ^ source.erlang meta.function.erlang
+#        ^^ source.erlang meta.function.erlang constant.other.symbol.unquoted.erlang
+#          ^ source.erlang meta.function.erlang punctuation.terminator.function.erlang
+>
+>-doc(~B"Hello\n").
+#^ source.erlang meta.directive.erlang punctuation.section.directive.begin.erlang
+# ^^^ source.erlang meta.directive.erlang keyword.control.directive.erlang
+#    ^ source.erlang meta.directive.erlang punctuation.definition.parameters.begin.erlang
+#     ^^ source.erlang meta.directive.erlang string.quoted.double.sigil.erlang storage.type.string.erlang
+#       ^ source.erlang meta.directive.erlang string.quoted.double.sigil.erlang punctuation.definition.string.begin.erlang
+#        ^^^^^^^ source.erlang meta.directive.erlang string.quoted.double.sigil.erlang
+#               ^ source.erlang meta.directive.erlang string.quoted.double.sigil.erlang punctuation.definition.string.end.erlang
+#                ^ source.erlang meta.directive.erlang punctuation.definition.parameters.end.erlang
+#                 ^ source.erlang meta.directive.erlang punctuation.section.directive.end.erlang
+>g4() -> ok.
+#^^ source.erlang meta.function.erlang entity.name.function.definition.erlang
+#  ^ source.erlang meta.function.erlang meta.expression.parenthesized punctuation.section.expression.begin.erlang
+#   ^ source.erlang meta.function.erlang meta.expression.parenthesized punctuation.section.expression.end.erlang
+#    ^ source.erlang meta.function.erlang
+#     ^ source.erlang meta.function.erlang keyword.operator.symbolic.erlang
+#      ^ source.erlang meta.function.erlang keyword.operator.symbolic.erlang
+#       ^ source.erlang meta.function.erlang
+#        ^^ source.erlang meta.function.erlang constant.other.symbol.unquoted.erlang
+#          ^ source.erlang meta.function.erlang punctuation.terminator.function.erlang
+>
+>-doc(<<"Hello\n"/utf8>>).
+#^ source.erlang meta.directive.erlang punctuation.section.directive.begin.erlang
+# ^^^ source.erlang meta.directive.erlang keyword.control.directive.erlang
+#    ^ source.erlang meta.directive.erlang punctuation.definition.parameters.begin.erlang
+#     ^^ source.erlang meta.directive.erlang meta.structure.binary.erlang punctuation.definition.binary.begin.erlang
+#       ^ source.erlang meta.directive.erlang meta.structure.binary.erlang string.quoted.double.erlang punctuation.definition.string.begin.erlang
+#        ^^^^^ source.erlang meta.directive.erlang meta.structure.binary.erlang string.quoted.double.erlang
+#             ^ source.erlang meta.directive.erlang meta.structure.binary.erlang string.quoted.double.erlang constant.character.escape.erlang punctuation.definition.escape.erlang
+#              ^ source.erlang meta.directive.erlang meta.structure.binary.erlang string.quoted.double.erlang constant.character.escape.erlang
+#               ^ source.erlang meta.directive.erlang meta.structure.binary.erlang string.quoted.double.erlang punctuation.definition.string.end.erlang
+#                ^ source.erlang meta.directive.erlang meta.structure.binary.erlang punctuation.separator.value-type.erlang
+#                 ^^^^ source.erlang meta.directive.erlang meta.structure.binary.erlang storage.type.erlang
+#                     ^^ source.erlang meta.directive.erlang meta.structure.binary.erlang punctuation.definition.binary.end.erlang
+#                       ^ source.erlang meta.directive.erlang punctuation.definition.parameters.end.erlang
+#                        ^ source.erlang meta.directive.erlang punctuation.section.directive.end.erlang
+>g5() -> ok.
+#^^ source.erlang meta.function.erlang entity.name.function.definition.erlang
+#  ^ source.erlang meta.function.erlang meta.expression.parenthesized punctuation.section.expression.begin.erlang
+#   ^ source.erlang meta.function.erlang meta.expression.parenthesized punctuation.section.expression.end.erlang
+#    ^ source.erlang meta.function.erlang
+#     ^ source.erlang meta.function.erlang keyword.operator.symbolic.erlang
+#      ^ source.erlang meta.function.erlang keyword.operator.symbolic.erlang
+#       ^ source.erlang meta.function.erlang
+#        ^^ source.erlang meta.function.erlang constant.other.symbol.unquoted.erlang
+#          ^ source.erlang meta.function.erlang punctuation.terminator.function.erlang
 >
 >-define(THIS_IS_THE_END, "end"). % just to check is syntax highlight is still ok
 #^ source.erlang meta.directive.define.erlang punctuation.section.directive.begin.erlang

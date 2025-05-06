@@ -24,16 +24,16 @@
 #                   ^ source.erlang meta.directive.export.erlang punctuation.section.directive.end.erlang
 >
 >-doc """
-#^ source.erlang meta.directive.erlang punctuation.section.directive.begin.erlang
-# ^^^ source.erlang meta.directive.erlang keyword.control.directive.erlang
-#    ^ source.erlang meta.directive.erlang
-#     ^^^ source.erlang meta.directive.erlang string.quoted.triple.erlang meta.string.quoted.triple.begin.erlang punctuation.definition.string.begin.erlang
+#^ source.erlang meta.directive.doc.erlang punctuation.section.directive.begin.erlang
+# ^^^ source.erlang meta.directive.doc.erlang keyword.control.directive.doc.erlang
+#    ^ source.erlang meta.directive.doc.erlang
+#     ^^^ source.erlang meta.directive.doc.erlang comment.block.documentation.erlang punctuation.definition.string.begin.erlang
 >     Sigil examples
-#^^^^^^^^^^^^^^^^^^^^ source.erlang meta.directive.erlang string.quoted.triple.erlang
+#^^^^^^^^^^^^^^^^^^^^ source.erlang meta.directive.doc.erlang comment.block.documentation.erlang
 >     """.
-#^^^^^ source.erlang meta.directive.erlang string.quoted.triple.erlang meta.string.quoted.triple.end.erlang
-#     ^^^ source.erlang meta.directive.erlang string.quoted.triple.erlang meta.string.quoted.triple.end.erlang punctuation.definition.string.end.erlang
-#        ^ source.erlang meta.directive.erlang punctuation.section.directive.end.erlang
+#^^^^^ source.erlang meta.directive.doc.erlang comment.block.documentation.erlang
+#     ^^^ source.erlang meta.directive.doc.erlang comment.block.documentation.erlang punctuation.definition.string.end.erlang
+#        ^ source.erlang meta.directive.doc.erlang
 >-spec f() -> ok.
 #^ source.erlang meta.directive.erlang punctuation.section.directive.begin.erlang
 # ^^^^ source.erlang meta.directive.erlang keyword.control.directive.erlang
@@ -86,7 +86,13 @@
 #^^^^ source.erlang meta.function.erlang
 #    ^^ source.erlang meta.function.erlang string.quoted.parenthesis.sigil.erlang storage.type.string.erlang
 #      ^ source.erlang meta.function.erlang string.quoted.parenthesis.sigil.erlang punctuation.definition.string.begin.erlang
-#       ^^^^^^^^^^^^^^^ source.erlang meta.function.erlang string.quoted.parenthesis.sigil.erlang
+#       ^^^^^^^ source.erlang meta.function.erlang string.quoted.parenthesis.sigil.erlang
+#              ^ source.erlang meta.function.erlang string.quoted.parenthesis.sigil.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#               ^ source.erlang meta.function.erlang string.quoted.parenthesis.sigil.erlang constant.character.format.placeholder.other.erlang
+#                ^ source.erlang meta.function.erlang string.quoted.parenthesis.sigil.erlang constant.character.format.placeholder.other.erlang punctuation.separator.placeholder-parts.erlang
+#                 ^ source.erlang meta.function.erlang string.quoted.parenthesis.sigil.erlang constant.character.format.placeholder.other.erlang punctuation.separator.placeholder-parts.erlang
+#                  ^^ source.erlang meta.function.erlang string.quoted.parenthesis.sigil.erlang constant.character.format.placeholder.other.erlang
+#                    ^^ source.erlang meta.function.erlang string.quoted.parenthesis.sigil.erlang
 #                      ^ source.erlang meta.function.erlang string.quoted.parenthesis.sigil.erlang punctuation.definition.string.end.erlang
 #                       ^ source.erlang meta.function.erlang punctuation.separator.expressions.erlang
 #                        ^ source.erlang meta.function.erlang
@@ -110,7 +116,13 @@
 #^^^^ source.erlang meta.function.erlang
 #    ^^ source.erlang meta.function.erlang string.quoted.parenthesis.sigil.erlang storage.type.string.erlang
 #      ^ source.erlang meta.function.erlang string.quoted.parenthesis.sigil.erlang punctuation.definition.string.begin.erlang
-#       ^^^^^^^^^^^^^^^ source.erlang meta.function.erlang string.quoted.parenthesis.sigil.erlang
+#       ^^^^^^^ source.erlang meta.function.erlang string.quoted.parenthesis.sigil.erlang
+#              ^ source.erlang meta.function.erlang string.quoted.parenthesis.sigil.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#               ^ source.erlang meta.function.erlang string.quoted.parenthesis.sigil.erlang constant.character.format.placeholder.other.erlang
+#                ^ source.erlang meta.function.erlang string.quoted.parenthesis.sigil.erlang constant.character.format.placeholder.other.erlang punctuation.separator.placeholder-parts.erlang
+#                 ^ source.erlang meta.function.erlang string.quoted.parenthesis.sigil.erlang constant.character.format.placeholder.other.erlang punctuation.separator.placeholder-parts.erlang
+#                  ^^ source.erlang meta.function.erlang string.quoted.parenthesis.sigil.erlang constant.character.format.placeholder.other.erlang
+#                    ^^ source.erlang meta.function.erlang string.quoted.parenthesis.sigil.erlang
 #                      ^ source.erlang meta.function.erlang string.quoted.parenthesis.sigil.erlang punctuation.definition.string.end.erlang
 #                       ^ source.erlang meta.function.erlang punctuation.separator.expressions.erlang
 #                        ^ source.erlang meta.function.erlang
@@ -149,7 +161,13 @@
 #^^^^ source.erlang meta.function.erlang
 #    ^^ source.erlang meta.function.erlang string.quoted.curly-brackets.sigil.erlang storage.type.string.erlang
 #      ^ source.erlang meta.function.erlang string.quoted.curly-brackets.sigil.erlang punctuation.definition.string.begin.erlang
-#       ^^^^^^^^^^^^^^^ source.erlang meta.function.erlang string.quoted.curly-brackets.sigil.erlang
+#       ^^^^^^^ source.erlang meta.function.erlang string.quoted.curly-brackets.sigil.erlang
+#              ^ source.erlang meta.function.erlang string.quoted.curly-brackets.sigil.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#               ^ source.erlang meta.function.erlang string.quoted.curly-brackets.sigil.erlang constant.character.format.placeholder.other.erlang
+#                ^ source.erlang meta.function.erlang string.quoted.curly-brackets.sigil.erlang constant.character.format.placeholder.other.erlang punctuation.separator.placeholder-parts.erlang
+#                 ^ source.erlang meta.function.erlang string.quoted.curly-brackets.sigil.erlang constant.character.format.placeholder.other.erlang punctuation.separator.placeholder-parts.erlang
+#                  ^^ source.erlang meta.function.erlang string.quoted.curly-brackets.sigil.erlang constant.character.format.placeholder.other.erlang
+#                    ^^ source.erlang meta.function.erlang string.quoted.curly-brackets.sigil.erlang
 #                      ^ source.erlang meta.function.erlang string.quoted.curly-brackets.sigil.erlang punctuation.definition.string.end.erlang
 #                       ^ source.erlang meta.function.erlang punctuation.separator.expressions.erlang
 #                        ^ source.erlang meta.function.erlang
@@ -173,7 +191,13 @@
 #^^^^ source.erlang meta.function.erlang
 #    ^^ source.erlang meta.function.erlang string.quoted.curly-brackets.sigil.erlang storage.type.string.erlang
 #      ^ source.erlang meta.function.erlang string.quoted.curly-brackets.sigil.erlang punctuation.definition.string.begin.erlang
-#       ^^^^^^^^^^^^^^^ source.erlang meta.function.erlang string.quoted.curly-brackets.sigil.erlang
+#       ^^^^^^^ source.erlang meta.function.erlang string.quoted.curly-brackets.sigil.erlang
+#              ^ source.erlang meta.function.erlang string.quoted.curly-brackets.sigil.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#               ^ source.erlang meta.function.erlang string.quoted.curly-brackets.sigil.erlang constant.character.format.placeholder.other.erlang
+#                ^ source.erlang meta.function.erlang string.quoted.curly-brackets.sigil.erlang constant.character.format.placeholder.other.erlang punctuation.separator.placeholder-parts.erlang
+#                 ^ source.erlang meta.function.erlang string.quoted.curly-brackets.sigil.erlang constant.character.format.placeholder.other.erlang punctuation.separator.placeholder-parts.erlang
+#                  ^^ source.erlang meta.function.erlang string.quoted.curly-brackets.sigil.erlang constant.character.format.placeholder.other.erlang
+#                    ^^ source.erlang meta.function.erlang string.quoted.curly-brackets.sigil.erlang
 #                      ^ source.erlang meta.function.erlang string.quoted.curly-brackets.sigil.erlang punctuation.definition.string.end.erlang
 #                       ^ source.erlang meta.function.erlang punctuation.separator.expressions.erlang
 #                        ^ source.erlang meta.function.erlang
@@ -212,7 +236,13 @@
 #^^^^ source.erlang meta.function.erlang
 #    ^^ source.erlang meta.function.erlang string.quoted.square-brackets.sigil.erlang storage.type.string.erlang
 #      ^ source.erlang meta.function.erlang string.quoted.square-brackets.sigil.erlang punctuation.definition.string.begin.erlang
-#       ^^^^^^^^^^^^^^^ source.erlang meta.function.erlang string.quoted.square-brackets.sigil.erlang
+#       ^^^^^^^ source.erlang meta.function.erlang string.quoted.square-brackets.sigil.erlang
+#              ^ source.erlang meta.function.erlang string.quoted.square-brackets.sigil.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#               ^ source.erlang meta.function.erlang string.quoted.square-brackets.sigil.erlang constant.character.format.placeholder.other.erlang
+#                ^ source.erlang meta.function.erlang string.quoted.square-brackets.sigil.erlang constant.character.format.placeholder.other.erlang punctuation.separator.placeholder-parts.erlang
+#                 ^ source.erlang meta.function.erlang string.quoted.square-brackets.sigil.erlang constant.character.format.placeholder.other.erlang punctuation.separator.placeholder-parts.erlang
+#                  ^^ source.erlang meta.function.erlang string.quoted.square-brackets.sigil.erlang constant.character.format.placeholder.other.erlang
+#                    ^^ source.erlang meta.function.erlang string.quoted.square-brackets.sigil.erlang
 #                      ^ source.erlang meta.function.erlang string.quoted.square-brackets.sigil.erlang punctuation.definition.string.end.erlang
 #                       ^ source.erlang meta.function.erlang punctuation.separator.expressions.erlang
 #                        ^ source.erlang meta.function.erlang
@@ -236,7 +266,13 @@
 #^^^^ source.erlang meta.function.erlang
 #    ^^ source.erlang meta.function.erlang string.quoted.square-brackets.sigil.erlang storage.type.string.erlang
 #      ^ source.erlang meta.function.erlang string.quoted.square-brackets.sigil.erlang punctuation.definition.string.begin.erlang
-#       ^^^^^^^^^^^^^^^ source.erlang meta.function.erlang string.quoted.square-brackets.sigil.erlang
+#       ^^^^^^^ source.erlang meta.function.erlang string.quoted.square-brackets.sigil.erlang
+#              ^ source.erlang meta.function.erlang string.quoted.square-brackets.sigil.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#               ^ source.erlang meta.function.erlang string.quoted.square-brackets.sigil.erlang constant.character.format.placeholder.other.erlang
+#                ^ source.erlang meta.function.erlang string.quoted.square-brackets.sigil.erlang constant.character.format.placeholder.other.erlang punctuation.separator.placeholder-parts.erlang
+#                 ^ source.erlang meta.function.erlang string.quoted.square-brackets.sigil.erlang constant.character.format.placeholder.other.erlang punctuation.separator.placeholder-parts.erlang
+#                  ^^ source.erlang meta.function.erlang string.quoted.square-brackets.sigil.erlang constant.character.format.placeholder.other.erlang
+#                    ^^ source.erlang meta.function.erlang string.quoted.square-brackets.sigil.erlang
 #                      ^ source.erlang meta.function.erlang string.quoted.square-brackets.sigil.erlang punctuation.definition.string.end.erlang
 #                       ^ source.erlang meta.function.erlang punctuation.separator.expressions.erlang
 #                        ^ source.erlang meta.function.erlang
@@ -275,7 +311,13 @@
 #^^^^ source.erlang meta.function.erlang
 #    ^^ source.erlang meta.function.erlang string.quoted.less-greater.sigil.erlang storage.type.string.erlang
 #      ^ source.erlang meta.function.erlang string.quoted.less-greater.sigil.erlang punctuation.definition.string.begin.erlang
-#       ^^^^^^^^^^^^^^^ source.erlang meta.function.erlang string.quoted.less-greater.sigil.erlang
+#       ^^^^^^^ source.erlang meta.function.erlang string.quoted.less-greater.sigil.erlang
+#              ^ source.erlang meta.function.erlang string.quoted.less-greater.sigil.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#               ^ source.erlang meta.function.erlang string.quoted.less-greater.sigil.erlang constant.character.format.placeholder.other.erlang
+#                ^ source.erlang meta.function.erlang string.quoted.less-greater.sigil.erlang constant.character.format.placeholder.other.erlang punctuation.separator.placeholder-parts.erlang
+#                 ^ source.erlang meta.function.erlang string.quoted.less-greater.sigil.erlang constant.character.format.placeholder.other.erlang punctuation.separator.placeholder-parts.erlang
+#                  ^^ source.erlang meta.function.erlang string.quoted.less-greater.sigil.erlang constant.character.format.placeholder.other.erlang
+#                    ^^ source.erlang meta.function.erlang string.quoted.less-greater.sigil.erlang
 #                      ^ source.erlang meta.function.erlang string.quoted.less-greater.sigil.erlang punctuation.definition.string.end.erlang
 #                       ^ source.erlang meta.function.erlang punctuation.separator.expressions.erlang
 #                        ^ source.erlang meta.function.erlang
@@ -299,7 +341,13 @@
 #^^^^ source.erlang meta.function.erlang
 #    ^^ source.erlang meta.function.erlang string.quoted.less-greater.sigil.erlang storage.type.string.erlang
 #      ^ source.erlang meta.function.erlang string.quoted.less-greater.sigil.erlang punctuation.definition.string.begin.erlang
-#       ^^^^^^^^^^^^^^^ source.erlang meta.function.erlang string.quoted.less-greater.sigil.erlang
+#       ^^^^^^^ source.erlang meta.function.erlang string.quoted.less-greater.sigil.erlang
+#              ^ source.erlang meta.function.erlang string.quoted.less-greater.sigil.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#               ^ source.erlang meta.function.erlang string.quoted.less-greater.sigil.erlang constant.character.format.placeholder.other.erlang
+#                ^ source.erlang meta.function.erlang string.quoted.less-greater.sigil.erlang constant.character.format.placeholder.other.erlang punctuation.separator.placeholder-parts.erlang
+#                 ^ source.erlang meta.function.erlang string.quoted.less-greater.sigil.erlang constant.character.format.placeholder.other.erlang punctuation.separator.placeholder-parts.erlang
+#                  ^^ source.erlang meta.function.erlang string.quoted.less-greater.sigil.erlang constant.character.format.placeholder.other.erlang
+#                    ^^ source.erlang meta.function.erlang string.quoted.less-greater.sigil.erlang
 #                      ^ source.erlang meta.function.erlang string.quoted.less-greater.sigil.erlang punctuation.definition.string.end.erlang
 #                       ^ source.erlang meta.function.erlang punctuation.separator.expressions.erlang
 #                        ^ source.erlang meta.function.erlang
@@ -338,7 +386,13 @@
 #^^^^ source.erlang meta.function.erlang
 #    ^^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang storage.type.string.erlang
 #      ^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang punctuation.definition.string.begin.erlang
-#       ^^^^^^^^^^^^^^^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang
+#       ^^^^^^^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang
+#              ^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#               ^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang constant.character.format.placeholder.other.erlang
+#                ^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang constant.character.format.placeholder.other.erlang punctuation.separator.placeholder-parts.erlang
+#                 ^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang constant.character.format.placeholder.other.erlang punctuation.separator.placeholder-parts.erlang
+#                  ^^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang constant.character.format.placeholder.other.erlang
+#                    ^^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang
 #                      ^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang punctuation.definition.string.end.erlang
 #                       ^ source.erlang meta.function.erlang punctuation.separator.expressions.erlang
 #                        ^ source.erlang meta.function.erlang
@@ -362,7 +416,13 @@
 #^^^^ source.erlang meta.function.erlang
 #    ^^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang storage.type.string.erlang
 #      ^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang punctuation.definition.string.begin.erlang
-#       ^^^^^^^^^^^^^^^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang
+#       ^^^^^^^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang
+#              ^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#               ^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang constant.character.format.placeholder.other.erlang
+#                ^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang constant.character.format.placeholder.other.erlang punctuation.separator.placeholder-parts.erlang
+#                 ^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang constant.character.format.placeholder.other.erlang punctuation.separator.placeholder-parts.erlang
+#                  ^^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang constant.character.format.placeholder.other.erlang
+#                    ^^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang
 #                      ^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang punctuation.definition.string.end.erlang
 #                       ^ source.erlang meta.function.erlang punctuation.separator.expressions.erlang
 #                        ^ source.erlang meta.function.erlang
@@ -401,7 +461,13 @@
 #^^^^ source.erlang meta.function.erlang
 #    ^^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang storage.type.string.erlang
 #      ^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang punctuation.definition.string.begin.erlang
-#       ^^^^^^^^^^^^^^^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang
+#       ^^^^^^^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang
+#              ^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#               ^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang constant.character.format.placeholder.other.erlang
+#                ^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang constant.character.format.placeholder.other.erlang punctuation.separator.placeholder-parts.erlang
+#                 ^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang constant.character.format.placeholder.other.erlang punctuation.separator.placeholder-parts.erlang
+#                  ^^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang constant.character.format.placeholder.other.erlang
+#                    ^^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang
 #                      ^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang punctuation.definition.string.end.erlang
 #                       ^ source.erlang meta.function.erlang punctuation.separator.expressions.erlang
 #                        ^ source.erlang meta.function.erlang
@@ -425,7 +491,13 @@
 #^^^^ source.erlang meta.function.erlang
 #    ^^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang storage.type.string.erlang
 #      ^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang punctuation.definition.string.begin.erlang
-#       ^^^^^^^^^^^^^^^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang
+#       ^^^^^^^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang
+#              ^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#               ^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang constant.character.format.placeholder.other.erlang
+#                ^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang constant.character.format.placeholder.other.erlang punctuation.separator.placeholder-parts.erlang
+#                 ^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang constant.character.format.placeholder.other.erlang punctuation.separator.placeholder-parts.erlang
+#                  ^^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang constant.character.format.placeholder.other.erlang
+#                    ^^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang
 #                      ^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang punctuation.definition.string.end.erlang
 #                       ^ source.erlang meta.function.erlang punctuation.separator.expressions.erlang
 #                        ^ source.erlang meta.function.erlang
@@ -464,7 +536,13 @@
 #^^^^ source.erlang meta.function.erlang
 #    ^^ source.erlang meta.function.erlang string.quoted.single.sigil.erlang storage.type.string.erlang
 #      ^ source.erlang meta.function.erlang string.quoted.single.sigil.erlang punctuation.definition.string.begin.erlang
-#       ^^^^^^^^^^^^^^^ source.erlang meta.function.erlang string.quoted.single.sigil.erlang
+#       ^^^^^^^ source.erlang meta.function.erlang string.quoted.single.sigil.erlang
+#              ^ source.erlang meta.function.erlang string.quoted.single.sigil.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#               ^ source.erlang meta.function.erlang string.quoted.single.sigil.erlang constant.character.format.placeholder.other.erlang
+#                ^ source.erlang meta.function.erlang string.quoted.single.sigil.erlang constant.character.format.placeholder.other.erlang punctuation.separator.placeholder-parts.erlang
+#                 ^ source.erlang meta.function.erlang string.quoted.single.sigil.erlang constant.character.format.placeholder.other.erlang punctuation.separator.placeholder-parts.erlang
+#                  ^^ source.erlang meta.function.erlang string.quoted.single.sigil.erlang constant.character.format.placeholder.other.erlang
+#                    ^^ source.erlang meta.function.erlang string.quoted.single.sigil.erlang
 #                      ^ source.erlang meta.function.erlang string.quoted.single.sigil.erlang punctuation.definition.string.end.erlang
 #                       ^ source.erlang meta.function.erlang punctuation.separator.expressions.erlang
 #                        ^ source.erlang meta.function.erlang
@@ -488,14 +566,37 @@
 #^^^^ source.erlang meta.function.erlang
 #    ^^ source.erlang meta.function.erlang string.quoted.single.sigil.erlang storage.type.string.erlang
 #      ^ source.erlang meta.function.erlang string.quoted.single.sigil.erlang punctuation.definition.string.begin.erlang
-#       ^^^^^^^^^^^^^^^ source.erlang meta.function.erlang string.quoted.single.sigil.erlang
+#       ^^^^^^^ source.erlang meta.function.erlang string.quoted.single.sigil.erlang
+#              ^ source.erlang meta.function.erlang string.quoted.single.sigil.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#               ^ source.erlang meta.function.erlang string.quoted.single.sigil.erlang constant.character.format.placeholder.other.erlang
+#                ^ source.erlang meta.function.erlang string.quoted.single.sigil.erlang constant.character.format.placeholder.other.erlang punctuation.separator.placeholder-parts.erlang
+#                 ^ source.erlang meta.function.erlang string.quoted.single.sigil.erlang constant.character.format.placeholder.other.erlang punctuation.separator.placeholder-parts.erlang
+#                  ^^ source.erlang meta.function.erlang string.quoted.single.sigil.erlang constant.character.format.placeholder.other.erlang
+#                    ^^ source.erlang meta.function.erlang string.quoted.single.sigil.erlang
 #                      ^ source.erlang meta.function.erlang string.quoted.single.sigil.erlang punctuation.definition.string.end.erlang
 #                       ^ source.erlang meta.function.erlang punctuation.separator.expressions.erlang
 #                        ^ source.erlang meta.function.erlang
 #                         ^ source.erlang meta.function.erlang comment.line.percentage.erlang punctuation.definition.comment.erlang
 #                          ^^^^^^^^^ source.erlang meta.function.erlang comment.line.percentage.erlang
 >
->     ~"monkey ~2..0b\n",
+>      "monkey ~2..0b\n", % '' == '~s'
+#^^^^^^ source.erlang meta.function.erlang
+#      ^ source.erlang meta.function.erlang string.quoted.double.erlang punctuation.definition.string.begin.erlang
+#       ^^^^^^^ source.erlang meta.function.erlang string.quoted.double.erlang
+#              ^ source.erlang meta.function.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#               ^ source.erlang meta.function.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang
+#                ^ source.erlang meta.function.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.separator.placeholder-parts.erlang
+#                 ^ source.erlang meta.function.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang punctuation.separator.placeholder-parts.erlang
+#                  ^^ source.erlang meta.function.erlang string.quoted.double.erlang constant.character.format.placeholder.other.erlang
+#                    ^ source.erlang meta.function.erlang string.quoted.double.erlang constant.character.escape.erlang punctuation.definition.escape.erlang
+#                     ^ source.erlang meta.function.erlang string.quoted.double.erlang constant.character.escape.erlang
+#                      ^ source.erlang meta.function.erlang string.quoted.double.erlang punctuation.definition.string.end.erlang
+#                       ^ source.erlang meta.function.erlang punctuation.separator.expressions.erlang
+#                        ^ source.erlang meta.function.erlang
+#                         ^ source.erlang meta.function.erlang comment.line.percentage.erlang punctuation.definition.comment.erlang
+#                          ^^^^^^^^^^^ source.erlang meta.function.erlang comment.line.percentage.erlang
+>
+>     ~"monkey ~2..0b\n", % '~' == '~b'
 #^^^^^ source.erlang meta.function.erlang
 #     ^ source.erlang meta.function.erlang string.quoted.double.sigil.erlang storage.type.string.erlang
 #      ^ source.erlang meta.function.erlang string.quoted.double.sigil.erlang punctuation.definition.string.begin.erlang
@@ -509,6 +610,9 @@
 #                     ^ source.erlang meta.function.erlang string.quoted.double.sigil.erlang constant.character.escape.erlang
 #                      ^ source.erlang meta.function.erlang string.quoted.double.sigil.erlang punctuation.definition.string.end.erlang
 #                       ^ source.erlang meta.function.erlang punctuation.separator.expressions.erlang
+#                        ^ source.erlang meta.function.erlang
+#                         ^ source.erlang meta.function.erlang comment.line.percentage.erlang punctuation.definition.comment.erlang
+#                          ^^^^^^^^^^^^ source.erlang meta.function.erlang comment.line.percentage.erlang
 >    ~b"monkey ~2..0b\n",
 #^^^^ source.erlang meta.function.erlang
 #    ^^ source.erlang meta.function.erlang string.quoted.double.sigil.erlang storage.type.string.erlang
@@ -527,7 +631,13 @@
 #^^^^ source.erlang meta.function.erlang
 #    ^^ source.erlang meta.function.erlang string.quoted.double.sigil.erlang storage.type.string.erlang
 #      ^ source.erlang meta.function.erlang string.quoted.double.sigil.erlang punctuation.definition.string.begin.erlang
-#       ^^^^^^^^^^^^^^^ source.erlang meta.function.erlang string.quoted.double.sigil.erlang
+#       ^^^^^^^ source.erlang meta.function.erlang string.quoted.double.sigil.erlang
+#              ^ source.erlang meta.function.erlang string.quoted.double.sigil.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#               ^ source.erlang meta.function.erlang string.quoted.double.sigil.erlang constant.character.format.placeholder.other.erlang
+#                ^ source.erlang meta.function.erlang string.quoted.double.sigil.erlang constant.character.format.placeholder.other.erlang punctuation.separator.placeholder-parts.erlang
+#                 ^ source.erlang meta.function.erlang string.quoted.double.sigil.erlang constant.character.format.placeholder.other.erlang punctuation.separator.placeholder-parts.erlang
+#                  ^^ source.erlang meta.function.erlang string.quoted.double.sigil.erlang constant.character.format.placeholder.other.erlang
+#                    ^^ source.erlang meta.function.erlang string.quoted.double.sigil.erlang
 #                      ^ source.erlang meta.function.erlang string.quoted.double.sigil.erlang punctuation.definition.string.end.erlang
 #                       ^ source.erlang meta.function.erlang punctuation.separator.expressions.erlang
 #                        ^ source.erlang meta.function.erlang
@@ -551,7 +661,13 @@
 #^^^^ source.erlang meta.function.erlang
 #    ^^ source.erlang meta.function.erlang string.quoted.double.sigil.erlang storage.type.string.erlang
 #      ^ source.erlang meta.function.erlang string.quoted.double.sigil.erlang punctuation.definition.string.begin.erlang
-#       ^^^^^^^^^^^^^^^ source.erlang meta.function.erlang string.quoted.double.sigil.erlang
+#       ^^^^^^^ source.erlang meta.function.erlang string.quoted.double.sigil.erlang
+#              ^ source.erlang meta.function.erlang string.quoted.double.sigil.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#               ^ source.erlang meta.function.erlang string.quoted.double.sigil.erlang constant.character.format.placeholder.other.erlang
+#                ^ source.erlang meta.function.erlang string.quoted.double.sigil.erlang constant.character.format.placeholder.other.erlang punctuation.separator.placeholder-parts.erlang
+#                 ^ source.erlang meta.function.erlang string.quoted.double.sigil.erlang constant.character.format.placeholder.other.erlang punctuation.separator.placeholder-parts.erlang
+#                  ^^ source.erlang meta.function.erlang string.quoted.double.sigil.erlang constant.character.format.placeholder.other.erlang
+#                    ^^ source.erlang meta.function.erlang string.quoted.double.sigil.erlang
 #                      ^ source.erlang meta.function.erlang string.quoted.double.sigil.erlang punctuation.definition.string.end.erlang
 #                       ^ source.erlang meta.function.erlang punctuation.separator.expressions.erlang
 #                        ^ source.erlang meta.function.erlang
@@ -590,7 +706,13 @@
 #^^^^ source.erlang meta.function.erlang
 #    ^^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang storage.type.string.erlang
 #      ^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang punctuation.definition.string.begin.erlang
-#       ^^^^^^^^^^^^^^^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang
+#       ^^^^^^^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang
+#              ^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#               ^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang constant.character.format.placeholder.other.erlang
+#                ^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang constant.character.format.placeholder.other.erlang punctuation.separator.placeholder-parts.erlang
+#                 ^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang constant.character.format.placeholder.other.erlang punctuation.separator.placeholder-parts.erlang
+#                  ^^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang constant.character.format.placeholder.other.erlang
+#                    ^^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang
 #                      ^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang punctuation.definition.string.end.erlang
 #                       ^ source.erlang meta.function.erlang punctuation.separator.expressions.erlang
 #                        ^ source.erlang meta.function.erlang
@@ -614,7 +736,13 @@
 #^^^^ source.erlang meta.function.erlang
 #    ^^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang storage.type.string.erlang
 #      ^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang punctuation.definition.string.begin.erlang
-#       ^^^^^^^^^^^^^^^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang
+#       ^^^^^^^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang
+#              ^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#               ^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang constant.character.format.placeholder.other.erlang
+#                ^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang constant.character.format.placeholder.other.erlang punctuation.separator.placeholder-parts.erlang
+#                 ^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang constant.character.format.placeholder.other.erlang punctuation.separator.placeholder-parts.erlang
+#                  ^^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang constant.character.format.placeholder.other.erlang
+#                    ^^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang
 #                      ^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang punctuation.definition.string.end.erlang
 #                       ^ source.erlang meta.function.erlang punctuation.separator.expressions.erlang
 #                        ^ source.erlang meta.function.erlang
@@ -653,7 +781,13 @@
 #^^^^ source.erlang meta.function.erlang
 #    ^^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang storage.type.string.erlang
 #      ^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang punctuation.definition.string.begin.erlang
-#       ^^^^^^^^^^^^^^^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang
+#       ^^^^^^^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang
+#              ^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#               ^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang constant.character.format.placeholder.other.erlang
+#                ^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang constant.character.format.placeholder.other.erlang punctuation.separator.placeholder-parts.erlang
+#                 ^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang constant.character.format.placeholder.other.erlang punctuation.separator.placeholder-parts.erlang
+#                  ^^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang constant.character.format.placeholder.other.erlang
+#                    ^^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang
 #                      ^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang punctuation.definition.string.end.erlang
 #                       ^ source.erlang meta.function.erlang punctuation.separator.expressions.erlang
 #                        ^ source.erlang meta.function.erlang
@@ -677,31 +811,37 @@
 #^^^^ source.erlang meta.function.erlang
 #    ^^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang storage.type.string.erlang
 #      ^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang punctuation.definition.string.begin.erlang
-#       ^^^^^^^^^^^^^^^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang
+#       ^^^^^^^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang
+#              ^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#               ^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang constant.character.format.placeholder.other.erlang
+#                ^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang constant.character.format.placeholder.other.erlang punctuation.separator.placeholder-parts.erlang
+#                 ^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang constant.character.format.placeholder.other.erlang punctuation.separator.placeholder-parts.erlang
+#                  ^^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang constant.character.format.placeholder.other.erlang
+#                    ^^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang
 #                      ^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang punctuation.definition.string.end.erlang
 #                       ^ source.erlang meta.function.erlang punctuation.separator.expressions.erlang
 #                        ^ source.erlang meta.function.erlang
 #                         ^ source.erlang meta.function.erlang comment.line.percentage.erlang punctuation.definition.comment.erlang
 #                          ^^^^^^^^^ source.erlang meta.function.erlang comment.line.percentage.erlang
 >
->    X = lists:seq(1,3), % just to check is syntax highlight is still ok
+>    _X = lists:seq(1,3), % just to check is syntax highlight is still ok
 #^^^^ source.erlang meta.function.erlang
-#    ^ source.erlang meta.function.erlang variable.other.erlang
-#     ^ source.erlang meta.function.erlang
-#      ^ source.erlang meta.function.erlang keyword.operator.symbolic.erlang
-#       ^ source.erlang meta.function.erlang
-#        ^^^^^ source.erlang meta.function.erlang meta.function-call.erlang entity.name.type.class.module.erlang
-#             ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.separator.module-function.erlang
-#              ^^^ source.erlang meta.function.erlang meta.function-call.erlang entity.name.function.erlang
-#                 ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.definition.parameters.begin.erlang
-#                  ^ source.erlang meta.function.erlang meta.function-call.erlang constant.numeric.integer.decimal.erlang
-#                   ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.separator.parameters.erlang
-#                    ^ source.erlang meta.function.erlang meta.function-call.erlang constant.numeric.integer.decimal.erlang
-#                     ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.definition.parameters.end.erlang
-#                      ^ source.erlang meta.function.erlang punctuation.separator.expressions.erlang
-#                       ^ source.erlang meta.function.erlang
-#                        ^ source.erlang meta.function.erlang comment.line.percentage.erlang punctuation.definition.comment.erlang
-#                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.erlang meta.function.erlang comment.line.percentage.erlang
+#    ^^ source.erlang meta.function.erlang variable.other.erlang
+#      ^ source.erlang meta.function.erlang
+#       ^ source.erlang meta.function.erlang keyword.operator.symbolic.erlang
+#        ^ source.erlang meta.function.erlang
+#         ^^^^^ source.erlang meta.function.erlang meta.function-call.erlang entity.name.type.class.module.erlang
+#              ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.separator.module-function.erlang
+#               ^^^ source.erlang meta.function.erlang meta.function-call.erlang entity.name.function.erlang
+#                  ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.definition.parameters.begin.erlang
+#                   ^ source.erlang meta.function.erlang meta.function-call.erlang constant.numeric.integer.decimal.erlang
+#                    ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.separator.parameters.erlang
+#                     ^ source.erlang meta.function.erlang meta.function-call.erlang constant.numeric.integer.decimal.erlang
+#                      ^ source.erlang meta.function.erlang meta.function-call.erlang punctuation.definition.parameters.end.erlang
+#                       ^ source.erlang meta.function.erlang punctuation.separator.expressions.erlang
+#                        ^ source.erlang meta.function.erlang
+#                         ^ source.erlang meta.function.erlang comment.line.percentage.erlang punctuation.definition.comment.erlang
+#                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.erlang meta.function.erlang comment.line.percentage.erlang
 >    ok.
 #^^^^ source.erlang meta.function.erlang
 #    ^^ source.erlang meta.function.erlang constant.other.symbol.unquoted.erlang
@@ -730,24 +870,64 @@
 #   ^ source.erlang meta.function.erlang
 #    ^ source.erlang meta.function.erlang keyword.operator.symbolic.erlang
 #     ^ source.erlang meta.function.erlang keyword.operator.symbolic.erlang
+>    %% verbatim ('' == '~S' for triple-quoted strings)
+#^^^^ source.erlang meta.function.erlang punctuation.whitespace.comment.leading.erlang
+#    ^ source.erlang meta.function.erlang comment.line.percentage.erlang punctuation.definition.comment.erlang
+#     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.erlang meta.function.erlang comment.line.percentage.erlang
+>    """
+#^^^^ source.erlang meta.function.erlang
+#    ^^^ source.erlang meta.function.erlang string.quoted.triple.erlang meta.string.quoted.triple.begin.erlang punctuation.definition.string.begin.erlang
+>    monkey ~2..0b\n
+#^^^^^^^^^^^ source.erlang meta.function.erlang string.quoted.triple.erlang
+#           ^ source.erlang meta.function.erlang string.quoted.triple.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#            ^ source.erlang meta.function.erlang string.quoted.triple.erlang constant.character.format.placeholder.other.erlang
+#             ^ source.erlang meta.function.erlang string.quoted.triple.erlang constant.character.format.placeholder.other.erlang punctuation.separator.placeholder-parts.erlang
+#              ^ source.erlang meta.function.erlang string.quoted.triple.erlang constant.character.format.placeholder.other.erlang punctuation.separator.placeholder-parts.erlang
+#               ^^ source.erlang meta.function.erlang string.quoted.triple.erlang constant.character.format.placeholder.other.erlang
+#                 ^^^ source.erlang meta.function.erlang string.quoted.triple.erlang
+>    business
+#^^^^^^^^^^^^^ source.erlang meta.function.erlang string.quoted.triple.erlang
+>    """,
+#^^^^ source.erlang meta.function.erlang string.quoted.triple.erlang meta.string.quoted.triple.end.erlang
+#    ^^^ source.erlang meta.function.erlang string.quoted.triple.erlang meta.string.quoted.triple.end.erlang punctuation.definition.string.end.erlang
+#       ^ source.erlang meta.function.erlang punctuation.separator.expressions.erlang
+>
+>    %% verbatim ('~' == '~B' for triple-quoted strings)
+#^^^^ source.erlang meta.function.erlang punctuation.whitespace.comment.leading.erlang
+#    ^ source.erlang meta.function.erlang comment.line.percentage.erlang punctuation.definition.comment.erlang
+#     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.erlang meta.function.erlang comment.line.percentage.erlang
 >    ~"""
 #^^^^ source.erlang meta.function.erlang
 #    ^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang storage.type.string.erlang
 #     ^^^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang meta.string.quoted.triple.begin.erlang punctuation.definition.string.begin.erlang
 >    monkey ~2..0b\n
-#^^^^^^^^^^^^^^^^^^^^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang
+#^^^^^^^^^^^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang
+#           ^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#            ^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang constant.character.format.placeholder.other.erlang
+#             ^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang constant.character.format.placeholder.other.erlang punctuation.separator.placeholder-parts.erlang
+#              ^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang constant.character.format.placeholder.other.erlang punctuation.separator.placeholder-parts.erlang
+#               ^^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang constant.character.format.placeholder.other.erlang
+#                 ^^^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang
 >    business
 #^^^^^^^^^^^^^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang
 >    """,
 #^^^^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang meta.string.quoted.triple.end.erlang
 #    ^^^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang meta.string.quoted.triple.end.erlang punctuation.definition.string.end.erlang
 #       ^ source.erlang meta.function.erlang punctuation.separator.expressions.erlang
+>
 >    ~b""""
 #^^^^ source.erlang meta.function.erlang
 #    ^^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang storage.type.string.erlang
 #      ^^^^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang meta.string.quoted.triple.begin.erlang punctuation.definition.string.begin.erlang
 >    monkey ~2..0b\n
-#^^^^^^^^^^^^^^^^^^^^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang
+#^^^^^^^^^^^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang
+#           ^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#            ^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang constant.character.format.placeholder.other.erlang
+#             ^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang constant.character.format.placeholder.other.erlang punctuation.separator.placeholder-parts.erlang
+#              ^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang constant.character.format.placeholder.other.erlang punctuation.separator.placeholder-parts.erlang
+#               ^^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang constant.character.format.placeholder.other.erlang
+#                 ^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang constant.character.escape.erlang punctuation.definition.escape.erlang
+#                  ^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang constant.character.escape.erlang
 >    """
 #^^^^^^^^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang
 >    business
@@ -756,12 +936,19 @@
 #^^^^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang meta.string.quoted.triple.end.erlang
 #    ^^^^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang meta.string.quoted.triple.end.erlang punctuation.definition.string.end.erlang
 #        ^ source.erlang meta.function.erlang punctuation.separator.expressions.erlang
+>
 >    ~B"""""
 #^^^^ source.erlang meta.function.erlang
 #    ^^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang storage.type.string.erlang
 #      ^^^^^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang meta.string.quoted.triple.begin.erlang punctuation.definition.string.begin.erlang
 >    monkey ~2..0b\n
-#^^^^^^^^^^^^^^^^^^^^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang
+#^^^^^^^^^^^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang
+#           ^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#            ^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang constant.character.format.placeholder.other.erlang
+#             ^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang constant.character.format.placeholder.other.erlang punctuation.separator.placeholder-parts.erlang
+#              ^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang constant.character.format.placeholder.other.erlang punctuation.separator.placeholder-parts.erlang
+#               ^^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang constant.character.format.placeholder.other.erlang
+#                 ^^^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang
 >    """
 #^^^^^^^^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang
 >    business
@@ -770,12 +957,20 @@
 #^^^^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang meta.string.quoted.triple.end.erlang
 #    ^^^^^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang meta.string.quoted.triple.end.erlang punctuation.definition.string.end.erlang
 #         ^ source.erlang meta.function.erlang punctuation.separator.expressions.erlang
+>
 >    ~s""""""
 #^^^^ source.erlang meta.function.erlang
 #    ^^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang storage.type.string.erlang
 #      ^^^^^^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang meta.string.quoted.triple.begin.erlang punctuation.definition.string.begin.erlang
 >    monkey ~2..0b\n
-#^^^^^^^^^^^^^^^^^^^^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang
+#^^^^^^^^^^^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang
+#           ^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#            ^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang constant.character.format.placeholder.other.erlang
+#             ^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang constant.character.format.placeholder.other.erlang punctuation.separator.placeholder-parts.erlang
+#              ^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang constant.character.format.placeholder.other.erlang punctuation.separator.placeholder-parts.erlang
+#               ^^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang constant.character.format.placeholder.other.erlang
+#                 ^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang constant.character.escape.erlang punctuation.definition.escape.erlang
+#                  ^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang constant.character.escape.erlang
 >    """
 #^^^^^^^^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang
 >    business
@@ -784,12 +979,19 @@
 #^^^^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang meta.string.quoted.triple.end.erlang
 #    ^^^^^^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang meta.string.quoted.triple.end.erlang punctuation.definition.string.end.erlang
 #          ^ source.erlang meta.function.erlang punctuation.separator.expressions.erlang
+>
 >    ~S"""""""
 #^^^^ source.erlang meta.function.erlang
 #    ^^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang storage.type.string.erlang
 #      ^^^^^^^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang meta.string.quoted.triple.begin.erlang punctuation.definition.string.begin.erlang
 >    monkey ~2..0b\n
-#^^^^^^^^^^^^^^^^^^^^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang
+#^^^^^^^^^^^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang
+#           ^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang constant.character.format.placeholder.other.erlang punctuation.definition.placeholder.erlang
+#            ^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang constant.character.format.placeholder.other.erlang
+#             ^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang constant.character.format.placeholder.other.erlang punctuation.separator.placeholder-parts.erlang
+#              ^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang constant.character.format.placeholder.other.erlang punctuation.separator.placeholder-parts.erlang
+#               ^^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang constant.character.format.placeholder.other.erlang
+#                 ^^^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang
 >    """
 #^^^^^^^^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang
 >    business
@@ -798,6 +1000,7 @@
 #^^^^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang meta.string.quoted.triple.end.erlang
 #    ^^^^^^^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang meta.string.quoted.triple.end.erlang punctuation.definition.string.end.erlang
 #           ^ source.erlang meta.function.erlang punctuation.separator.expressions.erlang
+>
 >    X = lists:seq(1,3), % just to check is syntax highlight is still ok
 #^^^^ source.erlang meta.function.erlang
 #    ^ source.erlang meta.function.erlang variable.other.erlang
@@ -860,7 +1063,10 @@
 #        ^^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang storage.type.string.erlang
 #          ^^^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang meta.string.quoted.triple.begin.erlang punctuation.definition.string.begin.erlang
 >          "\\µA"
-#^^^^^^^^^^^^^^^^^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang
+#^^^^^^^^^^^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang
+#           ^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang constant.character.escape.erlang punctuation.definition.escape.erlang
+#            ^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang constant.character.escape.erlang
+#             ^^^^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang
 >          """ = ~b'"\\µA"' =
 #^^^^^^^^^^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang meta.string.quoted.triple.end.erlang
 #          ^^^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang meta.string.quoted.triple.end.erlang punctuation.definition.string.end.erlang
@@ -900,7 +1106,7 @@
 #         ^^^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang meta.string.quoted.triple.begin.erlang punctuation.definition.string.begin.erlang
 >          "\µA"
 #^^^^^^^^^^^^^^^^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang
->          """ = ~"\"\\µA\"" = ~/"\\µA"/
+>          """ = ~"\"\\µA\"" = ~/"\\µA"/,
 #^^^^^^^^^^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang meta.string.quoted.triple.end.erlang
 #          ^^^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang meta.string.quoted.triple.end.erlang punctuation.definition.string.end.erlang
 #             ^ source.erlang meta.function.erlang
@@ -926,6 +1132,7 @@
 #                                  ^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang constant.character.escape.erlang
 #                                   ^^^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang
 #                                      ^ source.erlang meta.function.erlang string.quoted.other.sigil.erlang punctuation.definition.string.end.erlang
+#                                       ^ source.erlang meta.function.erlang punctuation.separator.expressions.erlang
 >    X = lists:seq(1,3), % just to check is syntax highlight is still ok
 #^^^^ source.erlang meta.function.erlang
 #    ^ source.erlang meta.function.erlang variable.other.erlang
@@ -971,7 +1178,10 @@
 #        ^^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang storage.type.string.erlang
 #          ^^^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang meta.string.quoted.triple.begin.erlang punctuation.definition.string.begin.erlang
 >          "\\µA"
-#^^^^^^^^^^^^^^^^^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang
+#^^^^^^^^^^^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang
+#           ^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang constant.character.escape.erlang punctuation.definition.escape.erlang
+#            ^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang constant.character.escape.erlang
+#             ^^^^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang
 >          """ = ~s"\"\\µA\"" = ~s["\\µA"] =
 #^^^^^^^^^^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang meta.string.quoted.triple.end.erlang
 #          ^^^ source.erlang meta.function.erlang string.quoted.tripple.sigil.erlang meta.string.quoted.triple.end.erlang punctuation.definition.string.end.erlang
@@ -1023,7 +1233,7 @@
 #        ^^^ source.erlang meta.function.erlang string.quoted.triple.erlang meta.string.quoted.triple.begin.erlang punctuation.definition.string.begin.erlang
 >        "\µA"
 #^^^^^^^^^^^^^^ source.erlang meta.function.erlang string.quoted.triple.erlang
->        """ = "\"\\µA\""
+>        """ = "\"\\µA\"",
 #^^^^^^^^ source.erlang meta.function.erlang string.quoted.triple.erlang meta.string.quoted.triple.end.erlang
 #        ^^^ source.erlang meta.function.erlang string.quoted.triple.erlang meta.string.quoted.triple.end.erlang punctuation.definition.string.end.erlang
 #           ^ source.erlang meta.function.erlang
@@ -1038,6 +1248,7 @@
 #                     ^ source.erlang meta.function.erlang string.quoted.double.erlang constant.character.escape.erlang punctuation.definition.escape.erlang
 #                      ^ source.erlang meta.function.erlang string.quoted.double.erlang constant.character.escape.erlang
 #                       ^ source.erlang meta.function.erlang string.quoted.double.erlang punctuation.definition.string.end.erlang
+#                        ^ source.erlang meta.function.erlang punctuation.separator.expressions.erlang
 >    X = lists:seq(1,3), % just to check is syntax highlight is still ok
 #^^^^ source.erlang meta.function.erlang
 #    ^ source.erlang meta.function.erlang variable.other.erlang
