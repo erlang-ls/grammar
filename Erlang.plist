@@ -604,17 +604,8 @@
 			</dict>
 			<key>name</key>
 			<string>meta.directive.doc.erlang</string>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>begin</key>
-					<string>\G</string>
-					<key>contentName</key>
-					<string>comment.block.documentation.erlang</string>
-					<key>while</key>
-					<string>(^)(?!\s*(\7))</string>
-				</dict>
-			</array>
+			<key>contentName</key>
+			<string>comment.block.documentation.erlang</string>
 		</dict>
 		<key>docstring</key>
 		<dict>
