@@ -612,7 +612,7 @@
 					<key>contentName</key>
 					<string>comment.block.documentation.erlang</string>
 					<key>while</key>
-					<string>(^)(?!\s*(\5))</string>
+					<string>(^)(?!\s*(\7))</string>
 				</dict>
 			</array>
 		</dict>
