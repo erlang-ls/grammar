@@ -81,3 +81,4 @@ See more:
 2. TextMate [Language Grammars](https://macromates.com/manual/en/language_grammars)
 3. [Writing a TextMate Grammar: Some Lessons Learned](https://www.apeth.com/nonblog/stories/textmatebundle.html)
 4. [Building a syntax highlighting extension for VS Code](https://dev.to/borama/building-a-syntax-highlighting-extension-for-vs-code-594)
+5. [Regular expression editor](https://rubular.com/) to quickly experiment with matches and captures
