@@ -75,6 +75,12 @@ PowerShell) and all tests will be run. To add more tests you can either add
 annotated files to `./tests/` or use the snapshot facility and then tests should
 be added to `./test/snap`.
 
+To update the snapshot tests, simply:
+
+```
+npx vscode-tmgrammar-snap --updateSnapshot ./tests/snap/*.erl
+```
+
 See more:
 
 1. Visual Studio Code [Syntax Highlight Guide](https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide)
