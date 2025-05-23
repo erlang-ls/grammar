@@ -605,7 +605,14 @@
 			<key>name</key>
 			<string>meta.directive.doc.erlang</string>
 			<key>contentName</key>
-			<string>comment.block.documentation.erlang</string>
+			<string>meta.embedded.block.markdown</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>text.html.markdown</string>
+				</dict>
+			</array>
 		</dict>
 		<key>docstring</key>
 		<dict>
