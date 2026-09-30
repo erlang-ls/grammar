@@ -73,7 +73,7 @@ To test the grammar we use
 simply run `npm ci && npm test` (or `npm ci` and `npm test` separately in
 PowerShell) and all tests will be run. To add more tests you can either add
 annotated files to `./tests/` or use the snapshot facility and then tests should
-be added to `./test/snap`.
+be added to `./tests/snap`.
 
 To update the snapshot tests, simply:
 
