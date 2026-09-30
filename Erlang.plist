@@ -3765,7 +3765,7 @@
 		<key>type-directive</key>
 		<dict>
 			<key>begin</key>
-			<string>^\s*+(-)\s*+(type|opaque|spec|callback)(?![a-zA-Z\d@_])\s*+(\(?)</string>
+			<string>^\s*+(-)\s*+(type|opaque|nominal|spec|callback)(?![a-zA-Z\d@_])\s*+(\(?)</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>

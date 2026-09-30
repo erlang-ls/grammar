@@ -91,3 +91,11 @@ ranged_spec(_, _) -> ok.
 
 k() -> ok.
 %<- source.erlang meta.function.erlang entity.name.function.definition.erlang
+
+%% Nominal types (OTP 28) carry types too.
+-nominal nominal_fun() :: fun(() -> ok).
+%^^^^^^^ source.erlang meta.directive.erlang meta.type.erlang keyword.control.directive.erlang
+%                         ^^^ source.erlang meta.directive.erlang meta.type.erlang entity.name.function.erlang
+
+l() -> ok.
+%<- source.erlang meta.function.erlang entity.name.function.definition.erlang
