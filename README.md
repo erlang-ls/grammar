@@ -78,7 +78,7 @@ be added to `./tests/snap`.
 To update the snapshot tests, simply:
 
 ```
-npx vscode-tmgrammar-snap --updateSnapshot ./tests/snap/*.erl
+npx vscode-tmgrammar-snap -g ./tests/grammars/markdown.tmLanguage.json --updateSnapshot ./tests/snap/*.erl
 ```
 
 See more:
