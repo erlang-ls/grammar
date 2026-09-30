@@ -1,0 +1,11 @@
+{
+  "comment": "Minimal stand-in for text.html.markdown, used only by the tests. Like the real Markdown grammar, it has a fenced code block rule that keeps consuming lines until the closing fence, which is enough to reproduce Markdown leaking out of doc attributes.",
+  "scopeName": "text.html.markdown",
+  "patterns": [
+    {
+      "begin": "(^|\\G)(\\s*)(`{3,}|~{3,})",
+      "end": "(^|\\G)(\\2|\\s{0,3})(\\3)\\s*$",
+      "name": "markup.fenced_code.block.markdown"
+    }
+  ]
+}
