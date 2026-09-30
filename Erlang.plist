@@ -988,7 +988,7 @@
 				</dict>
 				<dict>
 					<key>begin</key>
-					<string>\b(fun)\s+(_[a-zA-Z\d@_]++|[A-Z][a-zA-Z\d@_]*+)\s*+(?=\()</string>
+					<string>\b(fun)\s+(_[a-zA-Z\d@_]*+|[A-Z][a-zA-Z\d@_]*+)\s*+(?=\()</string>
 					<key>beginCaptures</key>
 					<dict>
 						<key>1</key>
@@ -1030,7 +1030,7 @@
 							<key>comment</key>
 							<string>Name of a named function expression clause</string>
 							<key>match</key>
-							<string>(_[a-zA-Z\d@_]++|[A-Z][a-zA-Z\d@_]*+)\s*+(?=\()</string>
+							<string>(_[a-zA-Z\d@_]*+|[A-Z][a-zA-Z\d@_]*+)\s*+(?=\()</string>
 						</dict>
 						<dict>
 							<key>begin</key>
@@ -1136,7 +1136,7 @@
 							<key>comment</key>
 							<string>Name of a named function expression clause</string>
 							<key>match</key>
-							<string>(_[a-zA-Z\d@_]++|[A-Z][a-zA-Z\d@_]*+)\s*+(?=\()</string>
+							<string>(_[a-zA-Z\d@_]*+|[A-Z][a-zA-Z\d@_]*+)\s*+(?=\()</string>
 						</dict>
 						<dict>
 							<key>begin</key>
@@ -1204,7 +1204,7 @@
 							<key>comment</key>
 							<string>Name of a named function expression clause</string>
 							<key>match</key>
-							<string>(_[a-zA-Z\d@_]++|[A-Z][a-zA-Z\d@_]*+)\s*+(?=\()</string>
+							<string>(_[a-zA-Z\d@_]*+|[A-Z][a-zA-Z\d@_]*+)\s*+(?=\()</string>
 						</dict>
 						<dict>
 							<key>begin</key>

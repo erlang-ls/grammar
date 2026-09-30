@@ -99,3 +99,34 @@ k() -> ok.
 
 l() -> ok.
 %<- source.erlang meta.function.erlang entity.name.function.definition.erlang
+
+%% A named fun can be called `_`. It is still a named fun, even with a `/`
+%% later on the same line.
+m() -> fun _(A) -> A / 2 end.
+%      ^^^ source.erlang meta.function.erlang meta.expression.fun.erlang keyword.control.fun.erlang
+%          ^ source.erlang meta.function.erlang meta.expression.fun.erlang entity.name.function.erlang
+%                    ^ source.erlang meta.function.erlang meta.expression.fun.erlang keyword.operator.symbolic.erlang
+%                        ^^^ source.erlang meta.function.erlang meta.expression.fun.erlang keyword.control.end.erlang
+
+n() ->
+    fun
+        _(0) -> 0;
+%       ^ source.erlang meta.function.erlang meta.expression.fun.erlang entity.name.function.erlang
+        _(N) -> N / 2
+%       ^ source.erlang meta.function.erlang meta.expression.fun.erlang entity.name.function.erlang
+    end.
+%   ^^^ source.erlang meta.function.erlang meta.expression.fun.erlang keyword.control.end.erlang
+
+%% A record field type ends at the comma or brace that ends the field, not at
+%% a comma nested inside the type, and a default value is not part of it.
+-record(typed_fields, {a :: {integer(), fun((a, b) -> c)},
+%                                       ^^^ source.erlang meta.directive.record.erlang meta.structure.record.erlang meta.type.erlang meta.structure.tuple.erlang entity.name.function.erlang
+                       b :: <<_:8, _:_*8>>,
+%                      ^ source.erlang meta.directive.record.erlang meta.structure.record.erlang variable.other.field.erlang
+%                                       ^^ source.erlang meta.directive.record.erlang meta.structure.record.erlang meta.type.erlang meta.structure.binary.erlang punctuation.definition.binary.end.erlang
+                       c = fun() -> ok end :: fun(() -> ok)}).
+%                      ^ source.erlang meta.directive.record.erlang meta.structure.record.erlang variable.other.field.erlang
+%                          ^^^ source.erlang meta.directive.record.erlang meta.structure.record.erlang meta.expression.fun.erlang keyword.control.fun.erlang - meta.type.erlang
+%                                             ^^^ source.erlang meta.directive.record.erlang meta.structure.record.erlang meta.type.erlang entity.name.function.erlang
+o() -> ok.
+%<- source.erlang meta.function.erlang entity.name.function.definition.erlang

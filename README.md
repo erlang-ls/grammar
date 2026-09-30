@@ -66,19 +66,19 @@ from _Ben Hockley_.
   > [Issue with Python 3.11](https://github.com/grahampugh/plist-yaml-plist/issues/15)
   > if you get a strange error when convert PLIST to YAML or vice versa.
 
-Commit your updates on `Erlang.plist` and ignode `Erlang.yaml`.
+Commit your updates on `Erlang.plist` and ignore `Erlang.yaml`.
 
 To test the grammar we use
 [VSCode Textmate grammar test](https://github.com/PanAeon/vscode-tmgrammar-test),
 simply run `npm ci && npm test` (or `npm ci` and `npm test` separately in
 PowerShell) and all tests will be run. To add more tests you can either add
 annotated files to `./tests/` or use the snapshot facility and then tests should
-be added to `./test/snap`.
+be added to `./tests/snap`.
 
 To update the snapshot tests, simply:
 
 ```
-npx vscode-tmgrammar-snap --updateSnapshot ./tests/snap/*.erl
+npx vscode-tmgrammar-snap -g ./tests/grammars/markdown.tmLanguage.json --updateSnapshot ./tests/snap/*.erl
 ```
 
 See more:
