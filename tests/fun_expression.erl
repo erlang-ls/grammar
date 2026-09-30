@@ -116,3 +116,17 @@ n() ->
 %       ^ source.erlang meta.function.erlang meta.expression.fun.erlang entity.name.function.erlang
     end.
 %   ^^^ source.erlang meta.function.erlang meta.expression.fun.erlang keyword.control.end.erlang
+
+%% A record field type ends at the comma or brace that ends the field, not at
+%% a comma nested inside the type, and a default value is not part of it.
+-record(typed_fields, {a :: {integer(), fun((a, b) -> c)},
+%                                       ^^^ source.erlang meta.directive.record.erlang meta.structure.record.erlang meta.type.erlang meta.structure.tuple.erlang entity.name.function.erlang
+                       b :: <<_:8, _:_*8>>,
+%                      ^ source.erlang meta.directive.record.erlang meta.structure.record.erlang variable.other.field.erlang
+%                                       ^^ source.erlang meta.directive.record.erlang meta.structure.record.erlang meta.type.erlang meta.structure.binary.erlang punctuation.definition.binary.end.erlang
+                       c = fun() -> ok end :: fun(() -> ok)}).
+%                      ^ source.erlang meta.directive.record.erlang meta.structure.record.erlang variable.other.field.erlang
+%                          ^^^ source.erlang meta.directive.record.erlang meta.structure.record.erlang meta.expression.fun.erlang keyword.control.fun.erlang - meta.type.erlang
+%                                             ^^^ source.erlang meta.directive.record.erlang meta.structure.record.erlang meta.type.erlang entity.name.function.erlang
+o() -> ok.
+%<- source.erlang meta.function.erlang entity.name.function.definition.erlang
