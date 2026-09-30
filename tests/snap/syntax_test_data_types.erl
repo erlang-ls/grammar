@@ -91,7 +91,7 @@ explicit_function_expressions3() ->
 
 -spec explicit_function_expressions4() -> ok.
 explicit_function_expressions4() ->
-    fun Fact(1) -> 1; % TODO: Name 'Fact' breaks syntax highlight. See '-define' below.
+    fun Fact(1) -> 1; % Name 'Fact' is highlighted as a function name.
         Fact(N) -> N * Fact(N-1)
     end,
     ok.
@@ -99,7 +99,7 @@ explicit_function_expressions4() ->
 -spec explicit_function_expressions5() -> ok.
 explicit_function_expressions5() ->
     fun
-        Fact(1) -> % TODO: Name 'Fact' breaks syntax highlight. See '-define' below.
+        Fact(1) -> % Name 'Fact' is highlighted as a function name.
             1;
         Fact(N) ->
             N * Fact(N-1)
