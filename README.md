@@ -66,7 +66,7 @@ from _Ben Hockley_.
   > [Issue with Python 3.11](https://github.com/grahampugh/plist-yaml-plist/issues/15)
   > if you get a strange error when convert PLIST to YAML or vice versa.
 
-Commit your updates on `Erlang.plist` and ignode `Erlang.yaml`.
+Commit your updates on `Erlang.plist` and ignore `Erlang.yaml`.
 
 To test the grammar we use
 [VSCode Textmate grammar test](https://github.com/PanAeon/vscode-tmgrammar-test),
