@@ -99,3 +99,20 @@ k() -> ok.
 
 l() -> ok.
 %<- source.erlang meta.function.erlang entity.name.function.definition.erlang
+
+%% A named fun can be called `_`. It is still a named fun, even with a `/`
+%% later on the same line.
+m() -> fun _(A) -> A / 2 end.
+%      ^^^ source.erlang meta.function.erlang meta.expression.fun.erlang keyword.control.fun.erlang
+%          ^ source.erlang meta.function.erlang meta.expression.fun.erlang entity.name.function.erlang
+%                    ^ source.erlang meta.function.erlang meta.expression.fun.erlang keyword.operator.symbolic.erlang
+%                        ^^^ source.erlang meta.function.erlang meta.expression.fun.erlang keyword.control.end.erlang
+
+n() ->
+    fun
+        _(0) -> 0;
+%       ^ source.erlang meta.function.erlang meta.expression.fun.erlang entity.name.function.erlang
+        _(N) -> N / 2
+%       ^ source.erlang meta.function.erlang meta.expression.fun.erlang entity.name.function.erlang
+    end.
+%   ^^^ source.erlang meta.function.erlang meta.expression.fun.erlang keyword.control.end.erlang
