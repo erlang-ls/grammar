@@ -73,3 +73,21 @@ h() -> fun ((X)) -> X end.
 
 -callback cb() -> fun((a) -> b).
 %                 ^^^ source.erlang meta.directive.erlang meta.type.erlang entity.name.function.erlang
+
+%% A range at the top level of a type does not end the type region: only a dot
+%% followed by whitespace, a comment or the end of the line ends the form.
+-type ranged_fun() :: 1..10 | fun(() -> ok).
+%                             ^^^ source.erlang meta.directive.erlang meta.type.erlang entity.name.function.erlang
+%                                          ^ source.erlang meta.directive.erlang meta.type.erlang punctuation.section.directive.end.erlang
+
+-spec ranged_spec(X, Y) -> ok when X :: 0..255, Y :: fun(() -> ok).
+%                                                    ^^^ source.erlang meta.directive.erlang meta.type.erlang entity.name.function.erlang
+ranged_spec(_, _) -> ok.
+%<----------- source.erlang meta.function.erlang entity.name.function.definition.erlang
+
+-type ranged_fun_commented() :: 1..10 | fun(() -> ok).% comment
+%                                       ^^^ source.erlang meta.directive.erlang meta.type.erlang entity.name.function.erlang
+%                                                    ^ source.erlang meta.directive.erlang meta.type.erlang punctuation.section.directive.end.erlang
+
+k() -> ok.
+%<- source.erlang meta.function.erlang entity.name.function.definition.erlang

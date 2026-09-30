@@ -3787,7 +3787,7 @@
 			<key>comment</key>
 			<string>Directive carrying types; meta.type.erlang marks the region where the function type rule is injected</string>
 			<key>end</key>
-			<string>(\)?)\s*+(\.)</string>
+			<string>(\)?)\s*+(\.)(?=\s|%|$)</string>
 			<key>endCaptures</key>
 			<dict>
 				<key>1</key>
